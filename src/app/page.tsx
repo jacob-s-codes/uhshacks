@@ -88,12 +88,15 @@ export default function Home() {
               Join us for 48 hours of coding, learning, and innovation at our school's premier hackathon event.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <Link href="/register" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-indigo-50">
-                Register Now
-              </Link>
-              <Link href="/about" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-700 bg-opacity-60 hover:bg-opacity-70">
-                Learn More
-              </Link>
+              <div className="relative inline-flex  group">
+                <div
+                  className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-white via-red-500 to-white rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+                </div>
+                <a href="#" title="Get quote now"
+                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                  role="button">Sign Up Now
+                </a>
+              </div>
             </div>
           </div>
         </div>
