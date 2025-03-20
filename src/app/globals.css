@@ -2,10 +2,16 @@
 
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-darkred: #a6192e;
+}
+
+.uhsbg {
+  background-image: url("/uhsimg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(114, 112, 112);
+  background-blend-mode: multiply;
+
 }
 
 

@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
 
       {/* Navigation */}
-      <nav className="bg-red-500 shadow-md text-white sticky top-0 z-50">
+      <nav className="bg-darkred shadow-md text-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
@@ -31,13 +31,13 @@ export default function Home() {
               <Link href="/schedule" className=" hover:text-indigo-600 px-3 py-2 font-medium">Schedule</Link>
               <Link href="/faq" className=" hover:text-indigo-600 px-3 py-2 font-medium">FAQ</Link>
               <Link href="/sponsors" className=" hover:text-indigo-600 px-3 py-2 font-medium">Sponsors</Link>
-              <Link href="/register" className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-red-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-white group">
+              <Link href="/register" className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-darkred transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-white group">
                 <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-black group-hover:h-full"></span>
                 <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                  <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  <svg className="w-5 h-5 text-darkred" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </span>
                 <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                  <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </span>
                 <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">Register</span>
               </Link>
@@ -78,22 +78,20 @@ export default function Home() {
 
       {/* Hero Section */}
       <main>
-        <div className="relative bg-red-700">
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-r from-red-950 to-red-700 mix-blend-multiply"></div>
-          </div>
-          <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl"><span className='text-red-500'>UHS</span> Hacks 2025</h1>
-            <p className="mt-6 max-w-3xl text-xl text-indigo-100">
+      <div className="relative h-screen uhsbg">
+
+          <div className="relative max-w-7xl flex flex-col h-screen mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-9xl"><span className='text-darkred'>UHS</span> Hacks 2025</h1>
+            <p className="mt-6 max-w-3xl font-semibold text-2xl text-white">
               Join us for 48 hours of coding, learning, and innovation at our school's premier hackathon event.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <div className="relative inline-flex  group">
                 <div
-                  className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-white via-red-500 to-white rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+                  className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-600 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
                 </div>
                 <a href="#" title="Get quote now"
-                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-gray-900"
                   role="button">Sign Up Now
                 </a>
               </div>
