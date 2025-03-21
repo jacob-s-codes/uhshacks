@@ -1,13 +1,11 @@
 "use client";
 import Head from 'next/head';
-import Link from 'next/link';
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/all';
 import { useEffect, useRef, useState } from 'react';
 import Registerbtn from './components/Registerbtn';
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const animateleft = useRef(null);
 
   useEffect(() => {
