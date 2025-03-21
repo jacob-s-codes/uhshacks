@@ -63,7 +63,7 @@ export default function Home() {
       <main>
         <div className="relative h-screen uhsbg flex items-center justify-center">
 
-          <div className="relative max-w-7xl w-full flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+          <div className="relative max-w-7xl w-full text-center flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
             <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-9xl"><span className='text-darkred'>UHS</span> Hacks 2025</h1>
             <p className="mt-6 max-w-xl font-semibold text-2xl text-white">
               Join us for 48 hours of coding, learning, and innovation at our schools premier hackathon event.
