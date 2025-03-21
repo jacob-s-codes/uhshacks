@@ -1,10 +1,55 @@
 "use client";
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState } from 'react';
+import gsap from "gsap";
+import { ScrollTrigger } from 'gsap/all';
+import { useEffect, useRef, useState } from 'react';
+import Registerbtn from './components/Registerbtn';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const animateleft = useRef(null);
+
+  useEffect(() => {
+    // Only run on client-side
+    if (typeof window !== 'undefined') {
+      // Register ScrollTrigger once
+      gsap.registerPlugin(ScrollTrigger);
+      
+      // Get the DOM element from the ref
+      const element = animateleft.current;
+      
+      // Create the animation
+      const animation = gsap.fromTo(element, 
+        // Starting properties
+        {
+          x: -200, // Start from far left (negative value)
+          opacity: 0.5,
+        },
+        // Ending properties
+        {
+          x: 0, // Move to original position
+          opacity: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+            end: "bottom 60%",
+            scrub: 0.5,
+            markers: true,
+            invalidateOnRefresh: true,
+            // markers: true, // Uncomment for debugging
+          }
+        }
+      );
+      
+      // Cleanup function to kill the animation when component unmounts
+      return () => {
+        if (animation) animation.kill();
+        ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      };
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -14,84 +59,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Navigation */}
-      <nav className="bg-darkred shadow-md text-white sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 flex items-center">
-                <span className=" font-bold text-2xl">UHS Hacks</span>
-              </div>
-            </div>
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/" className=" hover:text-indigo-600 px-3 py-2 font-medium">Home</Link>
-              <Link href="/about" className=" hover:text-indigo-600 px-3 py-2 font-medium">About</Link>
-              <Link href="/schedule" className=" hover:text-indigo-600 px-3 py-2 font-medium">Schedule</Link>
-              <Link href="/faq" className=" hover:text-indigo-600 px-3 py-2 font-medium">FAQ</Link>
-              <Link href="/sponsors" className=" hover:text-indigo-600 px-3 py-2 font-medium">Sponsors</Link>
-              <Link href="/register" className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-darkred transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-white group">
-                <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-black group-hover:h-full"></span>
-                <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                  <svg className="w-5 h-5 text-darkred" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </span>
-                <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </span>
-                <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">Register</span>
-              </Link>
-            </div>
-
-            {/* Mobile menu button */}
-            <div className="flex items-center md:hidden">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-indigo-600 focus:outline-none"
-              >
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  {isMenuOpen ? (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  ) : (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  )}
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Link href="/" className="block text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Home</Link>
-              <Link href="/about" className="block text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">About</Link>
-              <Link href="/schedule" className="block text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Schedule</Link>
-              <Link href="/faq" className="block text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">FAQ</Link>
-              <Link href="/sponsors" className="block text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Sponsors</Link>
-              <Link href="/register" className="block bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md font-medium mt-2">Register Now</Link>
-            </div>
-          </div>
-        )}
-      </nav>
 
       {/* Hero Section */}
       <main>
-      <div className="relative h-screen uhsbg">
+        <div className="relative h-screen uhsbg flex items-center justify-center">
 
-          <div className="relative max-w-7xl flex flex-col h-screen mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+          <div className="relative max-w-7xl w-full flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
             <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-9xl"><span className='text-darkred'>UHS</span> Hacks 2025</h1>
-            <p className="mt-6 max-w-3xl font-semibold text-2xl text-white">
+            <p className="mt-6 max-w-xl font-semibold text-2xl text-white">
               Join us for 48 hours of coding, learning, and innovation at our schools premier hackathon event.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <div className="relative inline-flex  group">
                 <div
-                  className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-600 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+                  className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
                 </div>
                 <a href="#" title="Get quote now"
-                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-gray-900"
+                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-gray-900"
                   role="button">Sign Up Now
                 </a>
               </div>
@@ -100,129 +85,140 @@ export default function Home() {
         </div>
 
         {/* Date and Location Section */}
-        <div className="bg-white">
-          <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-              <div className="flex flex-col items-center">
-                <div className="rounded-md bg-indigo-50 p-3">
-                  <svg className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
+        <div className="bg-gradient-to-b from-white to-red-200">
+          <div >
+            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+              <h2 className='text-center pt-36 pb-12 text-5xl font-black'>LOGISTICAL INFORMATION</h2>
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+                <div className="flex flex-col items-center">
+                  <div className="rounded-md bg-indigo-50 p-3">
+                    <svg className="h-18 w-auto text-darkred" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <h3 className="mt-4 text-2xl font-medium text-gray-900">May 15-17, 2025</h3>
+                  <p className="mt-2 text-base text-gray-500">Friday to Sunday</p>
                 </div>
-                <h3 className="mt-4 text-lg font-medium text-gray-900">May 15-17, 2025</h3>
-                <p className="mt-2 text-base text-gray-500">Friday to Sunday</p>
+
+                <div className="flex flex-col items-center">
+                  <div className="rounded-md  p-3">
+                    <svg className="h-18 w-auto text-darkred" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="mt-4 text-2xl font-medium text-gray-900">University High School</h3>
+                  <p className="mt-2 text-base text-gray-500">Main Auditorium & Tech Labs</p>
+                </div>
+
+                <div className="flex flex-col items-center">
+                  <div className="rounded-md bg-indigo-50 p-3">
+                    <svg className="h-18 w-auto text-darkred" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="mt-4 text-2xl font-medium text-gray-900">9 AM - 6:30 PM</h3>
+                  <p className="mt-2 text-base text-gray-500">Of coding, learning, and fun</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Feature Section */}
+          <div className=" py-36">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center">
+                <h2 className="text-5xl font-black text-black uppercase ">Why Participate in UHS Hacks?</h2>
+                <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                  Build amazing projects, learn new skills, and win awesome prizes.
+                </p>
               </div>
 
-              <div className="flex flex-col items-center">
-                <div className="rounded-md bg-indigo-50 p-3">
-                  <svg className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-                <h3 className="mt-4 text-lg font-medium text-gray-900">University High School</h3>
-                <p className="mt-2 text-base text-gray-500">Main Auditorium & Tech Labs</p>
-              </div>
+              <div className="mt-16">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                  <div className="bg-white overflow-hidden shadow-lg shadow-red-300 rounded-lg">
+                    <div className="px-4 py-5 sm:p-6">
+                      <div className="flex items-center">
+                        <div className="flex-shrink-0 bg-darkred rounded-md p-3">
+                          <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                          </svg>
+                        </div>
+                        <div className="ml-5">
+                          <h3 className="text-lg font-medium text-gray-900">Team Building</h3>
+                          <p className="mt-2 text-base text-gray-500">
+                            Form teams of up to 4 students and collaborate on innovative projects.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-              <div className="flex flex-col items-center">
-                <div className="rounded-md bg-indigo-50 p-3">
-                  <svg className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                  <div className="bg-white overflow-hidden shadow-lg shadow-red-300 rounded-lg ">
+                    <div className="px-4 py-5 sm:p-6">
+                      <div className="flex items-center">
+                        <div className="flex-shrink-0 bg-darkred rounded-md p-3">
+                          <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                          </svg>
+                        </div>
+                        <div className="ml-5">
+                          <h3 className="text-lg font-medium text-gray-900">Learn & Innovate</h3>
+                          <p className="mt-2 text-base text-gray-500">
+                            Workshops and mentors to help you learn new technologies and skills.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white overflow-hidden shadow-lg shadow-red-300 rounded-lg">
+                    <div className="px-4 py-5 sm:p-6">
+                      <div className="flex items-center">
+                        <div className="flex-shrink-0 bg-darkred rounded-md p-3">
+                          <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div className="ml-5">
+                          <h3 className="text-lg font-medium text-gray-900">Win Prizes</h3>
+                          <p className="mt-2 text-base text-gray-500">
+                            $5,000 in prizes for winners across multiple categories.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="mt-4 text-lg font-medium text-gray-900">48 Hours</h3>
-                <p className="mt-2 text-base text-gray-500">Of coding, learning, and fun</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Feature Section */}
-        <div className="bg-gray-50 py-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Why Participate in UHS Hacks?</h2>
-              <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-                Build amazing projects, learn new skills, and win awesome prizes.
-              </p>
-            </div>
 
-            <div className="mt-16">
-              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                <div className="bg-white overflow-hidden shadow rounded-lg">
-                  <div className="px-4 py-5 sm:p-6">
-                    <div className="flex items-center">
-                      <div className="flex-shrink-0 bg-indigo-500 rounded-md p-3">
-                        <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                      </div>
-                      <div className="ml-5">
-                        <h3 className="text-lg font-medium text-gray-900">Team Building</h3>
-                        <p className="mt-2 text-base text-gray-500">
-                          Form teams of up to 4 students and collaborate on innovative projects.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white overflow-hidden shadow rounded-lg">
-                  <div className="px-4 py-5 sm:p-6">
-                    <div className="flex items-center">
-                      <div className="flex-shrink-0 bg-indigo-500 rounded-md p-3">
-                        <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                        </svg>
-                      </div>
-                      <div className="ml-5">
-                        <h3 className="text-lg font-medium text-gray-900">Learn & Innovate</h3>
-                        <p className="mt-2 text-base text-gray-500">
-                          Workshops and mentors to help you learn new technologies and skills.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white overflow-hidden shadow rounded-lg">
-                  <div className="px-4 py-5 sm:p-6">
-                    <div className="flex items-center">
-                      <div className="flex-shrink-0 bg-indigo-500 rounded-md p-3">
-                        <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </div>
-                      <div className="ml-5">
-                        <h3 className="text-lg font-medium text-gray-900">Win Prizes</h3>
-                        <p className="mt-2 text-base text-gray-500">
-                          $5,000 in prizes for winners across multiple categories.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* CTA Section */}
-        <div className="bg-indigo-700">
-          <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              <span className="block">Ready to join UHS Hacks?</span>
-              <span className="block">Registration is open now!</span>
-            </h2>
-            <p className="mt-4 text-lg leading-6 text-indigo-200">
-              Limited spots available. Register today to secure your place in this exciting event!
-            </p>
-            <Link href="/register" className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-indigo-50 sm:w-auto">
-              Register Now
-            </Link>
+        <div className="bg-darkred">
+          <div className="max-w-7xl flex flex-row items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <div className='pr-8
+            ' ref={animateleft}>
+              <h2 className="text-3xl font-black text-white sm:text-5xl uppercase" >
+                <span className="block">Ready to hack?</span>
+                <span className="block">Registration is open now!</span>
+              </h2>
+              <p className="my-4 text-lg leading-6 text-white">
+                Limited spots available. Register today to secure your place in this exciting event!
+              </p>
+              <Registerbtn />
+            </div>
+            <img src="/uhsimg.png" alt="" className='max-w-2xl rounded-2xl shadow-2xl shadow-black h-auto' />
           </div>
         </div>
       </main>
+
+      <div className='my-[90vh]'>
+        hi
+      </div>
 
       {/* Footer */}
       <footer className="bg-white">
