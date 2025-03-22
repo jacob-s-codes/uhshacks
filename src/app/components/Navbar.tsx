@@ -20,7 +20,10 @@ const Navbar = () => {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
-                        <Link href="/about" className=" hover:text-black px-3 py-2 font-medium">About</Link>
+                        <Link href="#about" onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#about')?.scrollIntoView({behavior:'smooth'});
+                        }} className=" hover:text-black px-3 py-2 font-medium">About</Link>
                         <Link href="/schedule" className=" hover:text-black px-3 py-2 font-medium">Schedule</Link>
                         <Link href="/faq" className=" hover:text-black px-3 py-2 font-medium">FAQ</Link>
                         <Link href="/sponsors" className=" hover:text-black px-3 py-2 font-medium">Sponsors</Link>

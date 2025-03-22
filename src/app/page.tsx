@@ -6,7 +6,7 @@ import { useEffect, useRef } from 'react';
 import Registerbtn from './components/Registerbtn';
 
 export default function Home() {
-  const animateleft = useRef(null);
+  const animateup = useRef(null);
 
   useEffect(() => {
     // Only run on client-side
@@ -15,18 +15,18 @@ export default function Home() {
       gsap.registerPlugin(ScrollTrigger);
       
       // Get the DOM element from the ref
-      const element = animateleft.current;
+      const element = animateup.current;
       
       // Create the animation
       const animation = gsap.fromTo(element, 
         // Starting properties
         {
-          x: -200, // Start from far left (negative value)
+          y: 400, // Start from far left (negative value)
           opacity: 0.5,
         },
         // Ending properties
         {
-          x: 0, // Move to original position
+          y: 0, // Move to original position
           opacity: 1,
           ease: "power2.out",
           scrollTrigger: {
@@ -34,7 +34,6 @@ export default function Home() {
             start: "top 80%",
             end: "bottom 60%",
             scrub: 0.5,
-            markers: true,
             invalidateOnRefresh: true,
             // markers: true, // Uncomment for debugging
           }
@@ -84,18 +83,18 @@ export default function Home() {
 
         {/* Date and Location Section */}
         <div className="bg-gradient-to-b from-white to-red-200">
-          <div >
+          <div id="about">
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
               <h2 className='text-center pt-36 pb-12 text-5xl font-black'>LOGISTICAL INFORMATION</h2>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                 <div className="flex flex-col items-center">
-                  <div className="rounded-md bg-indigo-50 p-3">
+                  <div className="rounded-md p-3">
                     <svg className="h-18 w-auto text-darkred" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <h3 className="mt-4 text-2xl font-medium text-gray-900">May 15-17, 2025</h3>
-                  <p className="mt-2 text-base text-gray-500">Friday to Sunday</p>
+                  <p className="mt-2 text-base text-gray-700">Friday to Sunday</p>
                 </div>
 
                 <div className="flex flex-col items-center">
@@ -106,24 +105,24 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="mt-4 text-2xl font-medium text-gray-900">University High School</h3>
-                  <p className="mt-2 text-base text-gray-500">Main Auditorium & Tech Labs</p>
+                  <p className="mt-2 text-base text-gray-700">Main Auditorium & Tech Labs</p>
                 </div>
 
                 <div className="flex flex-col items-center">
-                  <div className="rounded-md bg-indigo-50 p-3">
+                  <div className="rounded-md  p-3">
                     <svg className="h-18 w-auto text-darkred" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <h3 className="mt-4 text-2xl font-medium text-gray-900">9 AM - 6:30 PM</h3>
-                  <p className="mt-2 text-base text-gray-500">Of coding, learning, and fun</p>
+                  <p className="mt-2 text-base text-gray-700">Of coding, learning, and fun</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Feature Section */}
-          <div className=" py-36">
+          <div className=" py-36" >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center">
                 <h2 className="text-5xl font-black text-black uppercase ">Why Participate in UHS Hacks?</h2>
@@ -197,9 +196,8 @@ export default function Home() {
 
         {/* CTA Section */}
         <div className="bg-darkred">
-          <div className="max-w-7xl flex flex-row items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-            <div className='pr-8
-            ' ref={animateleft}>
+          <div className="max-w-7xl flex flex-row items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8" ref={animateup}>
+            <div className='pr-8' >
               <h2 className="text-3xl font-black text-white sm:text-5xl uppercase" >
                 <span className="block">Ready to hack?</span>
                 <span className="block">Registration is open now!</span>
