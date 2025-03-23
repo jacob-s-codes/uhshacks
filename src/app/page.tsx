@@ -32,8 +32,9 @@ export default function Home() {
           scrollTrigger: {
             trigger: element,
             start: "top 80%",
-            end: "bottom 60%",
+            end: "top 20%",
             scrub: 0.5,
+            markers: true,
             invalidateOnRefresh: true,
             // markers: true, // Uncomment for debugging
           }
@@ -65,7 +66,7 @@ export default function Home() {
           <div className="relative max-w-7xl w-full text-center flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
             <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-9xl"><span className='text-darkred'>UHS</span> Hacks 2025</h1>
             <p className="mt-6 max-w-xl font-semibold text-2xl text-white">
-              Join us for 48 hours of coding, learning, and innovation at our schools premier hackathon event.
+              Join us for 12 hours of coding, learning, and innovation at our schools premier hackathon event.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <div className="relative inline-flex  group">
@@ -93,8 +94,8 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <h3 className="mt-4 text-2xl font-medium text-gray-900">May 15-17, 2025</h3>
-                  <p className="mt-2 text-base text-gray-700">Friday to Sunday</p>
+                  <h3 className="mt-4 text-2xl font-medium text-gray-900">September 13, 2025</h3>
+                  <p className="mt-2 text-base text-gray-700">Saturday</p>
                 </div>
 
                 <div className="flex flex-col items-center">
@@ -105,7 +106,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="mt-4 text-2xl font-medium text-gray-900">University High School</h3>
-                  <p className="mt-2 text-base text-gray-700">Main Auditorium & Tech Labs</p>
+                  <p className="mt-2 text-base text-gray-700">Library</p>
                 </div>
 
                 <div className="flex flex-col items-center">
@@ -125,7 +126,7 @@ export default function Home() {
           <div className=" py-36" >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center">
-                <h2 className="text-5xl font-black text-black uppercase ">Why Participate in UHS Hacks?</h2>
+                <h2 className="md:text-5xl text-3xl font-black text-black uppercase ">Why Participate in UHS Hacks?</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
                   Build amazing projects, learn new skills, and win awesome prizes.
                 </p>
@@ -188,6 +189,33 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+      {/* Schedule */}
+          <div className='py-36 max-w-7xl mx-auto'>
+            <h2 className='text-5xl font-black uppercase text-center pb-2'>Schedule</h2>
+            <hr className='border-2 border-black'/>
+            <div className='flex flex-col items-center w-full text-2xl font-thin pt-12 gap-y-4'>
+              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              rounded-lg'>
+                <h3 className='font-medium'>9:00 AM</h3>
+                <div className='flex flex-col items-end text-right max-w-2xl'>
+                  <h3 className='font-medium pb-1'>Check-In</h3>
+                  <hr className='w-full border border-black'/>
+                  <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
+                </div>
+              </div>
+              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              rounded-lg'>
+                <h3 className='font-medium'>9:00 AM</h3>
+                <div className='flex flex-col items-end text-right max-w-2xl'>
+                  <h3 className='font-medium pb-1'>Check-In</h3>
+                  <hr className='w-full border border-black'/>
+                  <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

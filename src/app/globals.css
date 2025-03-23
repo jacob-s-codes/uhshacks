@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
   background-color: rgb(114, 112, 112);
   background-blend-mode: multiply;
+  background-attachment: fixed;
 
 }
 
