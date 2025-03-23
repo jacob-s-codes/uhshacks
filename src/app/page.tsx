@@ -198,7 +198,7 @@ export default function Home() {
             <hr className='border-2 border-black'/>
             <div className='flex flex-col items-center w-full text-2xl font-thin pt-12 gap-y-4'>
               <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
-              rounded-lg'>
+              rounded-lg bg-white shadow-lg shadow-black'>
                 <h3 className='font-medium'>9:00 AM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
                   <h3 className='font-medium pb-1'>Check-In</h3>
@@ -207,7 +207,7 @@ export default function Home() {
                 </div>
               </div>
               <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
-              rounded-lg'>
+              rounded-lg bg-white shadow-lg shadow-black'>
                 <h3 className='font-medium'>9:00 AM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
                   <h3 className='font-medium pb-1'>Check-In</h3>
