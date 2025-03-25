@@ -32,7 +32,7 @@ export default function Home() {
           scrollTrigger: {
             trigger: element,
             start: "top 80%",
-            end: "top 20%",
+            end: "top 40%",
             scrub: 0.5,
             markers: true,
             invalidateOnRefresh: true,
@@ -193,12 +193,12 @@ export default function Home() {
           </div>
 
       {/* Schedule */}
-          <div className='py-36 max-w-7xl mx-auto'>
+          <div className='py-36 max-w-7xl mx-auto' id="schedule">
             <h2 className='text-5xl font-black uppercase text-center pb-2'>Schedule</h2>
             <hr className='border-2 border-black'/>
             <div className='flex flex-col items-center w-full text-2xl font-thin pt-12 gap-y-4'>
               <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
-              rounded-lg bg-white shadow-lg shadow-black'>
+              rounded-lg bg-white '>
                 <h3 className='font-medium'>9:00 AM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
                   <h3 className='font-medium pb-1'>Check-In</h3>
@@ -207,10 +207,77 @@ export default function Home() {
                 </div>
               </div>
               <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
-              rounded-lg bg-white shadow-lg shadow-black'>
-                <h3 className='font-medium'>9:00 AM</h3>
+              rounded-lg bg-white '>
+                <h3 className='font-medium'>10:00 AM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
-                  <h3 className='font-medium pb-1'>Check-In</h3>
+                  <h3 className='font-medium pb-1'>Theme Anounced</h3>
+                  <hr className='w-full border border-black'/>
+                  <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
+                </div>
+              </div>
+              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              rounded-lg bg-white '>
+                <h3 className='font-medium'>10:15 AM</h3>
+                <div className='flex flex-col items-end text-right max-w-2xl'>
+                  <h3 className='font-medium pb-1'>Hacking Starts</h3>
+                  <hr className='w-full border border-black'/>
+                  <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
+                </div>
+              </div>
+              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              rounded-lg bg-white '>
+                <h3 className='font-medium'>12:00 PM</h3>
+                <div className='flex flex-col items-end text-right max-w-2xl'>
+                  <h3 className='font-medium pb-1'>Lunch</h3>
+                  <hr className='w-full border border-black'/>
+                  <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
+                </div>
+              </div>
+              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              rounded-lg bg-white '>
+                <h3 className='font-medium'>2:30 PM</h3>
+                <div className='flex flex-col items-end text-right max-w-2xl'>
+                  <h3 className='font-medium pb-1'>Coding Competition</h3>
+                  <hr className='w-full border border-black'/>
+                  <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
+                </div>
+              </div>
+
+              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              rounded-lg bg-white '>
+                <h3 className='font-medium'>4:00 PM</h3>
+                <div className='flex flex-col items-end text-right max-w-2xl'>
+                  <h3 className='font-medium pb-1'>Hacking Stops</h3>
+                  <hr className='w-full border border-black'/>
+                  <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
+                </div>
+              </div>
+
+              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              rounded-lg bg-white '>
+                <h3 className='font-medium'>4:30 PM</h3>
+                <div className='flex flex-col items-end text-right max-w-2xl'>
+                  <h3 className='font-medium pb-1'>Demos</h3>
+                  <hr className='w-full border border-black'/>
+                  <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
+                </div>
+              </div>
+
+              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              rounded-lg bg-white '>
+                <h3 className='font-medium'>6:00 PM</h3>
+                <div className='flex flex-col items-end text-right max-w-2xl'>
+                  <h3 className='font-medium pb-1'>Judging</h3>
+                  <hr className='w-full border border-black'/>
+                  <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
+                </div>
+              </div>
+
+              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              rounded-lg bg-white '>
+                <h3 className='font-medium'>6:30 PM</h3>
+                <div className='flex flex-col items-end text-right max-w-2xl'>
+                  <h3 className='font-medium pb-1'>Winners Anounced!</h3>
                   <hr className='w-full border border-black'/>
                   <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
                 </div>

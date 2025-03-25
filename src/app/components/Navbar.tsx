@@ -24,7 +24,10 @@ const Navbar = () => {
                             e.preventDefault();
                             document.querySelector('#about')?.scrollIntoView({behavior:'smooth'});
                         }} className=" hover:text-black px-3 py-2 font-medium">About</Link>
-                        <Link href="/schedule" className=" hover:text-black px-3 py-2 font-medium">Schedule</Link>
+                        <Link href="#schedule" onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#schedule')?.scrollIntoView({behavior:'smooth'});
+                        }} className=" hover:text-black px-3 py-2 font-medium">Schedule</Link>
                         <Link href="/faq" className=" hover:text-black px-3 py-2 font-medium">FAQ</Link>
                         <Link href="/sponsors" className=" hover:text-black px-3 py-2 font-medium">Sponsors</Link>
                         <Link href="/register" className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-darkred transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-white group">
@@ -67,7 +70,10 @@ const Navbar = () => {
                             e.preventDefault();
                             document.querySelector('#about')?.scrollIntoView({behavior:'smooth'});
                         }} className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium">About</Link>
-                        <Link href="/schedule" className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium">Schedule</Link>
+                        <Link href="#schedule" onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#schedule')?.scrollIntoView({behavior:'smooth'});
+                        }} className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium">Schedule</Link>
                         <Link href="/faq" className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium">FAQ</Link>
                         <Link href="/sponsors" className="block text-white hover:bg-white hover:text-black px-3 py-2 font-medium">Sponsors</Link>
                         <Registerbtn/>
