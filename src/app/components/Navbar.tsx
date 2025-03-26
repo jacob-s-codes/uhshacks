@@ -10,11 +10,11 @@ const Navbar = () => {
     return (
 
         <nav className="bg-darkred shadow-lg text-white sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 ">
                 <div className="flex justify-between h-16">
                     <div className="flex items-center">
                         <div className="flex-shrink-0 flex items-center">
-                            <Link href="/"><span className="hover:text-black font-bold text-2xl">UHS Hacks</span></Link>
+                            <Link href="/"><span className="hover:text-black hover:bg-red-200 hover:rounded-lg px-3 py-2  font-bold text-2xl">UHS Hacks</span></Link>
                         </div>
                     </div>
 
@@ -23,13 +23,17 @@ const Navbar = () => {
                         <Link href="#about" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#about')?.scrollIntoView({behavior:'smooth'});
-                        }} className=" hover:text-black px-3 py-2 font-medium">About</Link>
+                        }} className=" hover:text-black hover:bg-red-200 hover:rounded-lg px-3 py-2 font-medium">About</Link>
                         <Link href="#schedule" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#schedule')?.scrollIntoView({behavior:'smooth'});
-                        }} className=" hover:text-black px-3 py-2 font-medium">Schedule</Link>
-                        <Link href="/faq" className=" hover:text-black px-3 py-2 font-medium">FAQ</Link>
-                        <Link href="/sponsors" className=" hover:text-black px-3 py-2 font-medium">Sponsors</Link>
+                        }} className=" hover:text-black hover:bg-red-200 hover:rounded-lg px-3 py-2 font-medium">Schedule</Link>
+                        
+                        <Link href="/sponsors" className=" hover:text-black hover:bg-red-200 hover:rounded-lg px-3 py-2 font-medium">Sponsors</Link>
+                        <Link href="#FAQ" onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#FAQ')?.scrollIntoView({behavior:'smooth'});
+                        }} className=" hover:text-black hover:bg-red-200 hover:rounded-lg px-3 py-2 font-medium">FAQ</Link>
                         <Link href="/register" className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-darkred transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-white group">
                             <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-black group-hover:h-full"></span>
                             <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
@@ -74,7 +78,10 @@ const Navbar = () => {
                             e.preventDefault();
                             document.querySelector('#schedule')?.scrollIntoView({behavior:'smooth'});
                         }} className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium">Schedule</Link>
-                        <Link href="/faq" className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium">FAQ</Link>
+                        <Link href="#faq" onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#schedule')?.scrollIntoView({behavior:'smooth'});
+                        }} className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium">FAQ</Link>
                         <Link href="/sponsors" className="block text-white hover:bg-white hover:text-black px-3 py-2 font-medium">Sponsors</Link>
                         <Registerbtn/>
                     </div>
