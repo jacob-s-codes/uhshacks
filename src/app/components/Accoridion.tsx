@@ -2,16 +2,23 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
-const Accordion = ({ items }) => {
-  const [activeIndex, setActiveIndex] = useState(null);
+type AccordionItem = {
+  title: React.ReactNode;
+  content: React.ReactNode;
+};
 
-  const toggleAccordion = (index) => {
+const Accordion = ({ items }: { items: AccordionItem[] }) => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+
+  const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+  
 
   return (
     <div className="w-full  mx-auto space-y-2">
-      {items.map((item, index) => (
+      {items.map((item: { title: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined; content: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined; }, index: number) => (
         <div 
           key={index} 
           className="border rounded-lg overflow-hidden"
