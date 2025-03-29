@@ -6,6 +6,7 @@ import { useEffect, useRef } from 'react';
 import Registerbtn from './components/Registerbtn';
 
 import AccordionDemo from './components/Accoridion';
+import Link from 'next/link';
 
 export default function Home() {
   const animateup = useRef(null);
@@ -97,16 +98,17 @@ export default function Home() {
         <div className="bg-gradient-to-b from-white to-red-200">
           <div id="about">
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-              <h2 className='text-center pt-36 pb-12 text-5xl font-black'>LOGISTICAL INFORMATION</h2>
-              <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+              <h2 className='text-center pt-36  text-5xl font-black pb-2'>LOGISTICAL INFORMATION</h2>
+              <hr className='mb-12 border-2 border-black'/>
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-3 ">
                 <div className="flex flex-col items-center">
                   <div className="rounded-md p-3">
                     <svg className="h-18 w-auto text-darkred" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <h3 className="mt-4 text-2xl font-medium text-gray-900">September 20, 2025</h3>
-                  <p className="mt-2 text-base text-gray-700">Saturday</p>
+                  <h3 className="mt-4 text-3xl font-medium ">September 20, 2025</h3>
+                  <p className="mt-2 text-xl text-gray-700">Saturday</p>
                 </div>
 
                 <div className="flex flex-col items-center">
@@ -116,8 +118,8 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
-                  <h3 className="mt-4 text-2xl font-medium text-gray-900">University High School</h3>
-                  <p className="mt-2 text-base text-gray-700">Library</p>
+                  <h3 className="mt-4 text-3xl font-medium">University High School</h3>
+                  <Link href="https://maps.app.goo.gl/R24RfjfDNtfwdVqJ8" target='_blank'><p className="mt-2 text-xl text-gray-700 hover:text-darkred">3065 Jackson Street | Directions here</p></Link>
                 </div>
 
                 <div className="flex flex-col items-center">
@@ -126,8 +128,8 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <h3 className="mt-4 text-2xl font-medium text-gray-900">9 AM - 6:30 PM</h3>
-                  <p className="mt-2 text-base text-gray-700">Of coding, learning, and fun</p>
+                  <h3 className="mt-4 text-3xl font-medium ">9 AM - 6:30 PM</h3>
+                  <p className="mt-2 text-xl text-gray-700">Of coding, learning, and fun</p>
                 </div>
               </div>
             </div>
@@ -137,10 +139,9 @@ export default function Home() {
           <div className=" py-36" >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center">
-                <h2 className="md:text-5xl text-3xl font-black text-black uppercase ">Why Participate in UHS Hacks?</h2>
-                <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-                  Build amazing projects, learn new skills, and win awesome prizes.
-                </p>
+                <h2 className="md:text-5xl text-3xl font-black text-black uppercase pb-2">Why Participate in UHS Hacks?</h2>
+                <hr className='border-2 border-black' />
+                
               </div>
 
               <div className="mt-16">
