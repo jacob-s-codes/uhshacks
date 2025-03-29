@@ -1,15 +1,16 @@
 "use client";
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { useState } from 'react';
 import Registerbtn from './Registerbtn';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    
 
     return (
 
-        <nav className="bg-darkred shadow-lg text-white sticky top-0 z-50">
+        <nav className={`bg-darkred shadow-lg text-white sticky top-0 z-50 transition-colors duration-300`} id="navbar">
             <div className="max-w-7xl mx-auto px-4 ">
                 <div className="flex justify-between h-16">
                     <div className="flex items-center">

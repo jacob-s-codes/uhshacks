@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 const Registerbtn = () => {
+
+    
     return (
         <div>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdaiUnt_hWneYpygHvoYs7jmvtgetWJOg15DLicKktSynXeJA/viewform?usp=dialog" target='_blank' className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-darkred transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-white group">
