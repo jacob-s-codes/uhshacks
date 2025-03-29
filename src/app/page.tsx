@@ -70,7 +70,7 @@ export default function Home() {
             <p className="mt-6 max-w-xl font-semibold text-2xl text-white">
               Join us for 12 hours of coding, learning, and innovation at our schools premier hackathon event.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
               <div className="relative inline-flex  group">
                 <div
                   className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
@@ -208,7 +208,7 @@ export default function Home() {
           <div className='py-36 max-w-7xl mx-auto' id="schedule">
             <h2 className='text-5xl font-black uppercase text-center pb-2'>Schedule</h2>
             <hr className='border-2 border-black' />
-            <div className='flex flex-col items-center w-full text-2xl font-thin pt-12 gap-y-4'>
+            <div className='flex flex-col items-center w-full text-2xl font-thin pt-12 gap-y-4 md:px-0 px-2'>
               <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
               rounded-lg bg-white '>
                 <h3 className='font-medium'>9:00 AM</h3>
@@ -303,7 +303,7 @@ export default function Home() {
 
         {/* CTA Section */}
         <div className="bg-darkred">
-          <div className="max-w-7xl flex flex-row items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8" ref={animateup}>
+          <div className="max-w-7xl flex lg:flex-row flex-col lg:text-right text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8" ref={animateup}>
             <div className='pr-8' >
               <h2 className="text-3xl font-black text-white sm:text-5xl uppercase" >
                 <span className="block">Ready to hack?</span>
@@ -314,12 +314,12 @@ export default function Home() {
               </p>
               <Registerbtn />
             </div>
-            <img src="/uhsimg.png" alt="" className='max-w-2xl rounded-2xl shadow-2xl shadow-black h-auto' />
+            <img src="/uhsimg.png" alt="" className='max-w-2xl rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4' />
           </div>
         </div>
       </main>
 
-      <div className='py-36 bg-white' id="FAQ">
+      <div className='py-36 bg-white lg:px-0 px-4' id="FAQ">
 
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-center text-5xl font-black'>FAQ</h2>
