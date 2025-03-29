@@ -74,7 +74,7 @@ export default function Home() {
                 <div
                   className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
                 </div>
-                <a href="#" title="Get quote now"
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaiUnt_hWneYpygHvoYs7jmvtgetWJOg15DLicKktSynXeJA/viewform?usp=dialog" title="Sign up" target='_blank'
                   className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-gray-900"
                   role="button">Sign Up Now
                 </a>
@@ -84,7 +84,7 @@ export default function Home() {
                 <div
                   className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
                 </div>
-                <a href="#" title="Get quote now"
+                <a href="https://discord.gg/69DBGBKeGz" title="Join the discord" target='_blank'
                   className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-gray-900"
                   role="button">Join The Discord
                 </a>

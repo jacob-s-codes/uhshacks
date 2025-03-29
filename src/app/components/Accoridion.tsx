@@ -26,7 +26,7 @@ const Accordion = ({ items }: { items: AccordionItem[] }) => {
           <button
             onClick={() => toggleAccordion(index)}
             className="w-full flex justify-between items-center 
-                       p-4 text-left bg-red-200 hover:bg-darkred hover:text-white 
+                       p-4 text-left bg-red-200 hover:bg-darkred hover:cursor-pointer hover:text-white 
                        transition-colors duration-200"
           >
             <span className="font-semibold">{item.title}</span>
