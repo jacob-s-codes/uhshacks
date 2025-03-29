@@ -303,7 +303,7 @@ export default function Home() {
 
         {/* CTA Section */}
         <div className="bg-darkred">
-          <div className="max-w-7xl flex lg:flex-row flex-col lg:text-right text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8" ref={animateup}>
+          <div className="max-w-7xl flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8" ref={animateup}>
             <div className='pr-8' >
               <h2 className="text-3xl font-black text-white sm:text-5xl uppercase" >
                 <span className="block">Ready to hack?</span>
