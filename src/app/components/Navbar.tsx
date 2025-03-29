@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { useState } from 'react';
 import Registerbtn from './Registerbtn';
