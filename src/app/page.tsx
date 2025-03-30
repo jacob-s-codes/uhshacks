@@ -66,8 +66,8 @@ export default function Home() {
         <div className="relative h-screen uhsbg flex items-center justify-center">
 
           <div className="relative max-w-7xl w-full text-center flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-            <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-9xl"><span className='text-darkred'>UHS</span> Hacks 2025</h1>
-            <p className="mt-6 max-w-xl font-semibold text-2xl text-white">
+            <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl"><span className='text-darkred'>UHS</span> Hacks 2025</h1>
+            <p className="mt-6 max-w-xl font-semibold lg:text-3xl text-2xl text-white">
               Join us for 12 hours of coding, learning, and innovation at our schools premier hackathon event.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
@@ -98,7 +98,7 @@ export default function Home() {
         <div className="bg-gradient-to-b from-white to-red-200">
           <div id="about">
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-              <h2 className='text-center pt-36  text-5xl font-black pb-2'>LOGISTICAL INFORMATION</h2>
+              <h2 className='text-center pt-36  lg:text-5xl text-4xl font-black pb-2'>LOGISTICAL INFORMATION</h2>
               <hr className='mb-12 border-2 border-black'/>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3 ">
                 <div className="flex flex-col items-center">
@@ -205,11 +205,11 @@ export default function Home() {
           </div>
 
           {/* Schedule */}
-          <div className='py-36 max-w-7xl mx-auto' id="schedule">
-            <h2 className='text-5xl font-black uppercase text-center pb-2'>Schedule</h2>
+          <div className='py-36 max-w-7xl mx-auto lg:px-0 px-4' id="schedule">
+            <h2 className='lg:text-5xl text-4xl font-black uppercase text-center pb-2'>Schedule</h2>
             <hr className='border-2 border-black' />
             <div className='flex flex-col items-center w-full text-2xl font-thin pt-12 gap-y-4 md:px-0 px-2'>
-              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-18
               rounded-lg bg-white '>
                 <h3 className='font-medium'>9:00 AM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
@@ -218,7 +218,7 @@ export default function Home() {
                   <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
                 </div>
               </div>
-              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-18
               rounded-lg bg-white '>
                 <h3 className='font-medium'>10:00 AM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
@@ -227,7 +227,7 @@ export default function Home() {
                   <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
                 </div>
               </div>
-              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-18
               rounded-lg bg-white '>
                 <h3 className='font-medium'>10:15 AM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
@@ -236,7 +236,7 @@ export default function Home() {
                   <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
                 </div>
               </div>
-              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-18
               rounded-lg bg-white '>
                 <h3 className='font-medium'>12:00 PM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
@@ -245,7 +245,7 @@ export default function Home() {
                   <p className='text-xl pt-6'>Hackers will check-in and get everything ready. Hackers can also find and organize their teams if necessary.</p>
                 </div>
               </div>
-              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-18
               rounded-lg bg-white '>
                 <h3 className='font-medium'>2:30 PM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
@@ -255,7 +255,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-18
               rounded-lg bg-white '>
                 <h3 className='font-medium'>4:00 PM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
@@ -265,7 +265,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-18
               rounded-lg bg-white '>
                 <h3 className='font-medium'>4:30 PM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
@@ -275,7 +275,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-18
               rounded-lg bg-white '>
                 <h3 className='font-medium'>6:00 PM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
@@ -285,7 +285,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='flex flex-row justify-between w-full max-w-7xl border border-gray-700 px-10 py-18
+              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-18
               rounded-lg bg-white '>
                 <h3 className='font-medium'>6:30 PM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl'>
@@ -305,12 +305,12 @@ export default function Home() {
         <div className="bg-darkred">
           <div className="max-w-7xl flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8" ref={animateup}>
             <div className='pr-8' >
-              <h2 className="text-3xl font-black text-white sm:text-5xl uppercase" >
+              <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase" >
                 <span className="block">Ready to hack?</span>
                 <span className="block">Registration is open now!</span>
               </h2>
-              <p className="my-4 text-lg leading-6 text-white">
-                Limited spots available. Register today to secure your place in this exciting event!
+              <p className="my-4 text-xl leading-6 text-white">
+                Limited spots available. Register today to secure your place!
               </p>
               <Registerbtn />
             </div>
@@ -322,7 +322,7 @@ export default function Home() {
       <div className='py-36 bg-white lg:px-0 px-4' id="FAQ">
 
         <div className='max-w-7xl mx-auto'>
-          <h2 className='text-center text-5xl font-black'>FAQ</h2>
+          <h2 className='text-center lg:text-5xl text-4xl font-black'>FAQ</h2>
           <hr className='mb-8 mt-1 border-2 border-black'/>
           <AccordionDemo />
         </div>
