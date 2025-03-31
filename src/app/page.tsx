@@ -353,9 +353,12 @@ export default function Home() {
               </svg>
             </a>
           </div>
-          <p className="mt-8 text-center text-base ">
-            &copy; 2025 UHS Hacks. All rights reserved.
-          </p>
+          <div className='flex flex-row items-center justify-center gap-x-10'>
+            <p className="mt-8  text-base ">
+              &copy; 2025 UHS Hacks. All rights reserved.
+            </p>
+            <p className='mt-8 text-center'>Questions? Email: <span className='font-bold'>jacobbshaul@gmail.com</span></p>
+          </div>
         </div>
       </footer>
     </div>
