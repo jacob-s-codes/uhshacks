@@ -7,3 +7,14 @@
     background-blend-mode: multiply;
     background-attachment: fixed;
 }  
+
+.uhsbg {
+    background-image: url("/uhsimg.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: rgb(114, 112, 112);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
