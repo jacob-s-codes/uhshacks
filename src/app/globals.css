@@ -42,16 +42,8 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-.uhsbg {
-  background-image: url("/uhsimg.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: rgb(114, 112, 112);
-  background-blend-mode: multiply;
-  background-attachment: fixed;
 
-}
+
 
 html,
 body {
