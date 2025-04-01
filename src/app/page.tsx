@@ -3,6 +3,7 @@ import Head from 'next/head';
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/all';
 import { useEffect, useRef } from 'react';
+import './globals.css';
 import Registerbtn from './components/Registerbtn';
 
 import AccordionDemo from './components/Accoridion';
