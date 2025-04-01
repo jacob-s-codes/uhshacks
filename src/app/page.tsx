@@ -351,7 +351,7 @@ export default function Home() {
             <p className="mt-8  text-base ">
               &copy; 2025 UHS Hacks. All rights reserved.
             </p>
-            <p className='mt-8 text-center'>Questions? Email: <span className='font-bold'>jacobbshaul@gmail.com</span></p>
+            <p className='mt-8 text-center'>Questions? Email: <span className='font-bold'>jacob@uhshacks.com</span></p>
           </div>
         </div>
       </footer>
