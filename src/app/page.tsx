@@ -54,11 +54,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Head>
-        <title>UHS Hacks | High School Hackathon</title>
-        <meta name="description" content="Join UHS Hacks, the premier high school hackathon where students collaborate, innovate, and build amazing projects!" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      
 
 
 
@@ -321,8 +317,9 @@ export default function Home() {
           <hr className='mb-8 mt-1 border-2 border-black' />
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
             <a href="https://modetocode.com" target='_blank' className='hover:scale-105 duration-200'><img src="/horizontalmtclogo.jpg" alt="Mode to Code sponsor" className='rounded-lg' /></a>
+            <p className='text-xl text-center '>Interested in sponsoring UHS Hacks? Email: <span className='font-bold'>info@uhshacks.com</span></p>
           </div>
-          <p className='text-xl mt-12'>Interested in sponsoring UHS Hacks? Email: <span className='font-bold'>info@uhshacks.com</span></p>
+         
         </div>
       </div>
 

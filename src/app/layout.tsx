@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "UHS Hacks",
-  description: "Hackathon for High School Students in the Bay Area",
+  title: "UHS Hacks | High School Hackathon",
+  description: "Join UHS Hacks, the premier high school hackathon where students collaborate, innovate, and build amazing projects!",
+  icons: {
+    icon: '/uhsimg.png'
+  },
 };
 
 export default function RootLayout({
