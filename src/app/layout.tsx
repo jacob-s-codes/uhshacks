@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "UHS Hacks | High School Hackathon",
   description: "Join UHS Hacks, the premier high school hackathon where students collaborate, innovate, and build amazing projects!",
   icons: {
-    icon: '/uhsimg.png'
+    icon: '/favicon.ico'
   },
 };
 
