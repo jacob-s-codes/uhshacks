@@ -8,13 +8,13 @@
     background-attachment: fixed;
 }  
 
-.uhsbg {
-    background-image: url("/uhsimg.png");
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-color: rgb(114, 112, 112);
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-}
 
+
+@keyframes glowing {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 400% 0%; }
+    100% { background-position: 0% 0%; }
+}
+.animate-glowing::before {
+    animation: glowing 20s linear infinite;
+}

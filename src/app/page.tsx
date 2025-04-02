@@ -77,10 +77,11 @@ export default function Home() {
                   className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
                 </div>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaiUnt_hWneYpygHvoYs7jmvtgetWJOg15DLicKktSynXeJA/viewform?usp=dialog" title="Sign up" target='_blank'
-                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-gray-900"
+                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl "
                   role="button">Sign Up Now
                 </a>
               </div>
+
 
               <div className="relative inline-flex  group">
                 <div
@@ -100,7 +101,7 @@ export default function Home() {
           <div id="about">
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
               <h2 className='text-center pt-36  lg:text-5xl text-4xl font-black pb-2'>LOGISTICAL INFORMATION</h2>
-              <hr className='mb-12 border-2 border-black'/>
+              <hr className='mb-12 border-2 border-black' />
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3 ">
                 <div className="flex flex-col items-center">
                   <div className="rounded-md p-3">
@@ -142,7 +143,7 @@ export default function Home() {
               <div className="text-center">
                 <h2 className="md:text-5xl text-3xl font-black text-black uppercase pb-2">Why Participate in UHS Hacks?</h2>
                 <hr className='border-2 border-black' />
-                
+
               </div>
 
               <div className="mt-16">
@@ -216,7 +217,7 @@ export default function Home() {
                 <div className='flex flex-col items-end text-right w-full max-w-2xl'>
                   <h3 className='font-medium pb-1'>Check-In</h3>
                   <hr className='w-full border border-black' />
-                  
+
                 </div>
               </div>
               <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
@@ -225,7 +226,7 @@ export default function Home() {
                 <div className='flex flex-col items-end text-right w-full max-w-2xl'>
                   <h3 className='font-medium pb-1'>Theme Anounced</h3>
                   <hr className='w-full border border-black' />
-                  
+
                 </div>
               </div>
               <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
@@ -317,19 +318,21 @@ export default function Home() {
 
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-center lg:text-5xl text-4xl font-black'>SPONSORS</h2>
-          <hr className='mb-8 mt-1 border-2 border-black'/>
+          <hr className='mb-8 mt-1 border-2 border-black' />
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-            <a href="https://modetocode.com" target='_blank' className='hover:scale-105 duration-200'><img src="/horizontalmtclogo.jpg" alt="Mode to Code sponsor" className='rounded-lg'/></a>
+            <a href="https://modetocode.com" target='_blank' className='hover:scale-105 duration-200'><img src="/horizontalmtclogo.jpg" alt="Mode to Code sponsor" className='rounded-lg' /></a>
           </div>
           <p className='text-xl mt-12'>Interested in sponsoring UHS Hacks? Email: <span className='font-bold'>info@uhshacks.com</span></p>
         </div>
       </div>
 
+      
+
       <div className='py-36 bg-white lg:px-0 px-4' id="FAQ">
 
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-center lg:text-5xl text-4xl font-black'>FAQ</h2>
-          <hr className='mb-8 mt-1 border-2 border-black'/>
+          <hr className='mb-8 mt-1 border-2 border-black' />
           <AccordionDemo />
         </div>
       </div>
