@@ -18,7 +18,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center space-x-8">
+                    <div className="hidden md:flex items-center space-x-8 text-lg">
                         <Link href="#about" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#about')?.scrollIntoView({behavior:'smooth'});
@@ -28,7 +28,10 @@ const Navbar = () => {
                             document.querySelector('#schedule')?.scrollIntoView({behavior:'smooth'});
                         }} className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300">Schedule</Link>
                         
-                        <Link href="/sponsors" className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300">Sponsors</Link>
+                        <Link href="#sponsors" onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#sponsors')?.scrollIntoView({behavior:'smooth'});
+                        }} className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300">Sponsors</Link>
                         <Link href="#FAQ" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#FAQ')?.scrollIntoView({behavior:'smooth'});

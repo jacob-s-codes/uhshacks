@@ -318,7 +318,9 @@ export default function Home() {
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-center lg:text-5xl text-4xl font-black'>SPONSORS</h2>
           <hr className='mb-8 mt-1 border-2 border-black'/>
-          <p className='text-xl'>Still working on sponsors, check back in soon!</p>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+            <a href="https://modetocode.com" target='_blank' className='hover:scale-105 duration-200'><img src="/horizontalmtclogo.jpg" alt="Mode to Code sponsor" className='rounded-lg'/></a>
+          </div>
           <p className='text-xl mt-12'>Interested in sponsoring UHS Hacks? Email: <span className='font-bold'>info@uhshacks.com</span></p>
         </div>
       </div>
