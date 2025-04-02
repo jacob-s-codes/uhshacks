@@ -298,13 +298,13 @@ export default function Home() {
         {/* CTA Section */}
         <div className="bg-darkred">
           <div className="max-w-7xl flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8" ref={animateup}>
-            <div className='pr-8' >
+            <div className='pr-8 text-white' >
               <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase" >
                 <span className="block">Ready to hack?</span>
-                <span className="block">Registration is open now!</span>
+                <span className="block">Registration is now open!</span>
               </h2>
-              <p className="my-4 text-xl leading-6 text-white">
-                Limited spots available. Register today to secure your place!
+              <p className="my-8 text-xl leading-6 ">
+                Limited spots available. Register today to secure your place! Questions? Email <span className='font-bold'>info@uhshacks.com</span> for more information!
               </p>
               <Registerbtn />
             </div>
@@ -312,6 +312,16 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      <div className='pt-36 bg-white lg:px-0 px-4' id="sponsors">
+
+        <div className='max-w-7xl mx-auto'>
+          <h2 className='text-center lg:text-5xl text-4xl font-black'>SPONSORS</h2>
+          <hr className='mb-8 mt-1 border-2 border-black'/>
+          <p className='text-xl'>Still working on sponsors, check back in soon!</p>
+          <p className='text-xl mt-12'>Interested in sponsoring UHS Hacks? Email: <span className='font-bold'>info@uhshacks.com</span></p>
+        </div>
+      </div>
 
       <div className='py-36 bg-white lg:px-0 px-4' id="FAQ">
 
@@ -351,7 +361,7 @@ export default function Home() {
             <p className="mt-8  text-base ">
               &copy; 2025 UHS Hacks. All rights reserved.
             </p>
-            <p className='mt-8 text-center'>Questions? Email: <span className='font-bold'>jacob@uhshacks.com</span></p>
+            <p className='mt-8 text-center'>Questions? Email: <span className='font-bold'>info@uhshacks.com</span></p>
           </div>
         </div>
       </footer>
