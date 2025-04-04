@@ -30,7 +30,7 @@ const CryptoText: React.FC<CryptoTextProps> = ({ text, className }) => {
         clearInterval(interval);
       }
 
-      iterations += 1 / 3; // Adjust speed of reveal
+      iterations += 1 / 4; // Adjust speed of reveal
     }, 50);
 
     return () => clearInterval(interval);
