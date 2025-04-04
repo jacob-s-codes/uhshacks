@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useState } from 'react';
 import Registerbtn from './Registerbtn';
+import CryptoText from './CryptoText';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
                 <div className="flex justify-between h-16">
                     <div className="flex items-center">
                         <div className="flex-shrink-0 flex items-center">
-                            <Link href="/"><span className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-bold text-2xl transition-colors duration-300">UHS Hacks</span></Link>
+                            <Link href="/"><span ><CryptoText text="UHS Hacks" className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-bold text-2xl transition-colors duration-300"/></span></Link>
                         </div>
                     </div>
 
@@ -22,20 +23,20 @@ const Navbar = () => {
                         <Link href="#about" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#about')?.scrollIntoView({behavior:'smooth'});
-                        }} className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300">About</Link>
+                        }} ><CryptoText text="About" className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300"/></Link>
                         <Link href="#schedule" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#schedule')?.scrollIntoView({behavior:'smooth'});
-                        }} className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300">Schedule</Link>
+                        }} ><CryptoText text="Schedule" className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300"/></Link>
                         
                         <Link href="#sponsors" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#sponsors')?.scrollIntoView({behavior:'smooth'});
-                        }} className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300">Sponsors</Link>
+                        }} ><CryptoText text="Sponsors" className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300"/></Link>
                         <Link href="#FAQ" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#FAQ')?.scrollIntoView({behavior:'smooth'});
-                        }} className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300">FAQ</Link>
+                        }}><CryptoText text="FAQ" className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300"/></Link>
                         <Registerbtn/>
                     </div>
 
