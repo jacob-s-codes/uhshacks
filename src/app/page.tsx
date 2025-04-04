@@ -8,6 +8,7 @@ import Registerbtn from './components/Registerbtn';
 
 import AccordionDemo from './components/Accoridion';
 import Link from 'next/link';
+import CryptoText from './components/CryptoTextOnce';
 
 export default function Home() {
   const animateup = useRef(null);
@@ -63,7 +64,7 @@ export default function Home() {
         <div className={`h-[calc(100vh-4rem)] ${styles.uhsbg} flex items-center justify-center`}>
 
           <div className="relative max-w-7xl w-full text-center flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-            <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl"><span className='text-darkred'>UHS</span> Hacks 2025</h1>
+            <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl"><span className='text-darkred'>UHS </span><CryptoText text="Hacks 2025"/></h1>
             <p className="mt-6 max-w-xl font-semibold lg:text-3xl text-2xl text-white">
               Join us for 12 hours of coding, learning, and innovation at our schools premier hackathon event.
             </p>
