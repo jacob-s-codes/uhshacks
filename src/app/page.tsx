@@ -204,8 +204,8 @@ export default function Home() {
           </div>
 
           {/* Schedule */}
-          <div className='py-36 max-w-7xl mx-auto lg:px-0 px-4' id="schedule">
-            <h2 className='lg:text-5xl text-4xl font-black uppercase text-center pb-2'>Schedule</h2>
+          <div className='py-36 max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8' id="schedule">
+            <h2 className='lg:text-5xl text-4xl font-black uppercase text-center pb-2 '>Schedule</h2>
             <hr className='border-2 border-black' />
             <div className='flex flex-col items-center w-full text-2xl font-thin pt-12 gap-y-4 md:px-0 px-2'>
               <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
@@ -311,13 +311,13 @@ export default function Home() {
         </div>
       </main>
 
-      <div className='pt-36 bg-white lg:px-0 px-4' id="sponsors">
+      <div className='pt-36 bg-white sm:px-6 lg:px-8 px-4' id="sponsors">
 
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-center lg:text-5xl text-4xl font-black'>SPONSORS</h2>
           <hr className='mb-8 mt-1 border-2 border-black' />
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-            <a href="https://modetocode.com" target='_blank' className='hover:scale-105 duration-200'><img src="/horizontalmtclogo.jpg" alt="Mode to Code sponsor" className='rounded-lg' /></a>
+            <a href="https://modetocode.com" target='_blank' className='hover:scale-105 hover:rotate-3 duration-200 '><img src="/horizontalmtclogo.jpg" alt="Mode to Code sponsor" className='rounded-full' /></a>
             <p className='text-xl text-center '>Interested in sponsoring UHS Hacks? Email: <span className='font-bold'>info@uhshacks.com</span></p>
           </div>
          
@@ -326,7 +326,7 @@ export default function Home() {
 
       
 
-      <div className='py-36 bg-white lg:px-0 px-4' id="FAQ">
+      <div className='py-36 bg-white sm:px-6 lg:px-8 px-4' id="FAQ">
 
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-center lg:text-5xl text-4xl font-black'>FAQ</h2>
