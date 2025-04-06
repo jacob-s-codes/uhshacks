@@ -1,5 +1,4 @@
 "use client";
-import Head from 'next/head';
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/all';
 import { useEffect, useRef } from 'react';
