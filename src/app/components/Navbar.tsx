@@ -79,7 +79,11 @@ const Navbar = () => {
                         document.querySelector('#FAQ')?.scrollIntoView({behavior:'smooth'});
                         setIsMenuOpen(false);
                     }} className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium transition-colors duration-300">FAQ</Link>
-                    <Link href="/sponsors" className="block text-white hover:bg-white hover:text-black px-3 py-2 font-medium transition-colors duration-300">Sponsors</Link>
+                    <Link href="#sponsors" onClick={(e) => {
+                        e.preventDefault();
+                        document.querySelector('#sponsors')?.scrollIntoView({behavior:'smooth'});
+                        setIsMenuOpen(false);
+                    }} className="block text-white hover:bg-white hover:text-black px-3 py-2 font-medium transition-colors duration-300">Sponsors</Link>
                     <Registerbtn/>
                 </div>
             </div>
