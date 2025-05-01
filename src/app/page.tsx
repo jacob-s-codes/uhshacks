@@ -359,11 +359,12 @@ export default function Home() {
               </svg>
             </a>
           </div>
-          <div className='flex flex-row items-center justify-center gap-x-10'>
-            <p className="mt-8  text-base ">
+          <div className='flex flex-row items-center justify-center gap-x-10 mt-8'>
+            <p className=" text-base ">
               &copy; 2025 UHS Hacks. All rights reserved.
             </p>
-            <p className='mt-8 text-center'>Questions? Email: <span className='font-bold'>info@uhshacks.com</span></p>
+            <p>Website built by <Link href="https://github.com/jacob-s-codes" target="_blank" className="hover:cursor-pointer"><span className="hover:text-black">Jacob S</span></Link></p>
+            <p className=' text-center'>Questions? Email: <span className='font-bold'>info@uhshacks.com</span></p>
           </div>
         </div>
       </footer>
