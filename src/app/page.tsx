@@ -313,10 +313,11 @@ export default function Home() {
       <div className='pt-36 bg-white sm:px-6 lg:px-8 px-4' id="sponsors">
 
         <div className='max-w-7xl mx-auto'>
-          <h2 className='text-center lg:text-5xl text-4xl font-black'>SPONSORS</h2>
+          <h2 className='text-center lg:text-5xl text-4xl font-black'>THANK YOU TO OUR SPONSORS</h2>
           <hr className='mb-8 mt-1 border-2 border-black' />
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-            <a href="https://modetocode.com" target='_blank' className='hover:scale-105 hover:rotate-3 duration-200 '><img src="/horizontalmtclogo.jpg" alt="Mode to Code sponsor" className='rounded-full' /></a>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center'>
+            <a href="https://modetocode.com" target='_blank' className='hover:scale-105 hover:rotate-3 duration-200 '><img src="/mtclogo.png" alt="Mode to Code sponsor" className='rounded-full w-auto h-96' /></a>
+            <a href="https://www.sfuhs.org/" target='_blank' className='hover:scale-105 hover:rotate-3 duration-200 w-96 h-96'><img src="/uhslogo.jpg" alt="Mode to Code sponsor" className='rounded-full w-96 h-96' /></a>
             <p className='text-xl text-center '>Interested in sponsoring UHS Hacks? Email: <span className='font-bold'>info@uhshacks.com</span></p>
           </div>
          
