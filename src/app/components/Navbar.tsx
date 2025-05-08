@@ -3,7 +3,8 @@ import React from 'react';
 import Link from 'next/link';
 import { useState } from 'react';
 import Registerbtn from './Registerbtn';
-import CryptoText from './CryptoText';
+import Image from 'next/image';
+// import CryptoText from './CryptoText';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
                 <div className="flex justify-between h-16">
                     <div className="flex items-center">
                         <div className="flex-shrink-0 flex items-center">
-                            <Link href="/" className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-bold text-2xl transition-colors duration-300"><span >UHS Hacks</span></Link>
+                            <Link href="/" ><Image width={500} height={500} src="/uhshacks.png" alt="UHS Hacks" className='lg:w-64 md:w-40 w-52 h-auto pb-2'></Image></Link>
                         </div>
                     </div>
 
