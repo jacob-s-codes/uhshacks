@@ -126,7 +126,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <h3 className="mt-4 text-3xl font-medium ">9 AM - 6:30 PM</h3>
+                  <h3 className="mt-4 text-3xl font-medium ">9 AM - 6:45 PM</h3>
                   <p className="mt-2 text-xl text-gray-700">Coding, learning, and fun</p>
                 </div>
               </div>
@@ -281,7 +281,7 @@ export default function Home() {
               rounded-lg bg-white '>
                 <h3 className='font-medium'>6:30 PM</h3>
                 <div className='flex flex-col items-end text-right max-w-2xl w-full'>
-                  <h3 className='font-medium pb-1'>Winners Anounced!</h3>
+                  <h3 className='font-medium pb-1'>Winners Announced!</h3>
                   <hr className='w-full border border-black' />
                 </div>
               </div>
