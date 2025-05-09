@@ -65,7 +65,7 @@ export default function Home() {
           <div className="relative max-w-7xl w-full text-center flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
             <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl"><span className='text-darkred'>UHS </span><CryptoText text="Hacks 2025"/></h1>
             <p className="mt-6 max-w-xl font-semibold lg:text-3xl text-2xl text-white">
-              Join us for 12 hours of coding, learning, and innovation at our schools premier hackathon event.
+              Join us for a day of coding, learning, and innovation at our school's premier hackathon event
             </p>
             <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
               <div className="relative inline-flex  group">
@@ -127,7 +127,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="mt-4 text-3xl font-medium ">9 AM - 6:30 PM</h3>
-                  <p className="mt-2 text-xl text-gray-700">Of coding, learning, and fun</p>
+                  <p className="mt-2 text-xl text-gray-700">Coding, learning, and fun</p>
                 </div>
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function Home() {
                         <div className="ml-5">
                           <h3 className="text-lg font-medium text-gray-900">Team Building</h3>
                           <p className="mt-2 text-base text-gray-500">
-                            Form teams of up to 4 students and collaborate on innovative projects.
+                            Form teams up to 4 students and collaborate on innovative projects
                           </p>
                         </div>
                       </div>
@@ -171,9 +171,9 @@ export default function Home() {
                           </svg>
                         </div>
                         <div className="ml-5">
-                          <h3 className="text-lg font-medium text-gray-900">Learn & Innovate</h3>
+                          <h3 className="text-lg font-medium text-gray-900">Innovate & Learn</h3>
                           <p className="mt-2 text-base text-gray-500">
-                            Mentors to help you learn new technologies and skills.
+                            Mentors help you learn new technologies and skills
                           </p>
                         </div>
                       </div>
@@ -191,7 +191,7 @@ export default function Home() {
                         <div className="ml-5">
                           <h3 className="text-lg font-medium text-gray-900">Win Prizes</h3>
                           <p className="mt-2 text-base text-gray-500">
-                            $XXXX in prizes for winners across multiple categories.
+                            Prizes for winners across multiple categories
                           </p>
                         </div>
                       </div>
@@ -301,7 +301,7 @@ export default function Home() {
                 <span className="block">Registration is now open!</span>
               </h2>
               <p className="my-8 text-xl leading-6 ">
-                Limited spots available. Register today to secure your place! Questions? Email <span className='font-bold'>info@uhshacks.com</span> for more information!
+                Limited spots available. Register today to secure your place. Questions? Email <span className='font-bold'>info@uhshacks.com</span> for more information.
               </p>
               <Registerbtn />
             </div>

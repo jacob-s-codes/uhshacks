@@ -77,7 +77,7 @@ const AccordionDemo = () => {
   const accordionItems = [
     {
       title: "What is a hackathon?",
-      content: "A hackathon is a design sprint-like event in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, domain experts, and others collaborate intensively on software projects."
+      content: "A hackathon is a collaborative, time-bound event where people come together to develop software or hardware solutions to a specific problem or challenge"
     },
     {
       title: "Is it free?",
@@ -85,11 +85,11 @@ const AccordionDemo = () => {
     },
     {
       title: "Do I need to know how to code?",
-      content: "Nope! We welcome students of all skill levels, from beginners to experts."
+      content: "Nope! We welcome students of all skill levels from beginners to experts."
     },
     {
       title: "What should I bring?",
-      content: "Bring your laptop, charger, and any other tech you need to work on your project. We also recommend bringing a water bottle and snacks to keep you energized throughout the event."
+      content: "Bring your laptop, charger, and any other tech you need to work on your project. We also recommend bringing a water bottle and snacks to keep you energized throughout the event. We will also provide lunch, snacks, and drinks."
     }
 
   ];
