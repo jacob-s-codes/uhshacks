@@ -220,7 +220,7 @@ export default function Home() {
               rounded-lg bg-white '>
                 <h3 className='font-medium'>10:00 AM</h3>
                 <div className='flex flex-col items-end text-right w-full max-w-2xl'>
-                  <h3 className='font-medium pb-1'>Theme Anounced</h3>
+                  <h3 className='font-medium pb-1'>Theme Announced</h3>
                   <hr className='w-full border border-black' />
 
                 </div>
