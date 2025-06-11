@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <main>
-        <div className={`lg:h-[calc(100vh-4rem)] h-screen uhsbg flex items-center justify-center`}>
+        <div className="uhsbg lg:h-[calc(100vh-4rem)] h-screen  flex items-center justify-center">
 
           <div className="relative max-w-7xl w-full text-center flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
             <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl"><span className='text-darkred'>UHS </span><CryptoText text="Hacks 2025" /></h1>
