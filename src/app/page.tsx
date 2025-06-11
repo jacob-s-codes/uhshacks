@@ -301,7 +301,7 @@ export default function Home() {
                 <span className="block">Registration is now open!</span>
               </h2>
               <p className="my-8 text-xl leading-6 ">
-                Limited spots available. Register today to secure your place. Questions? Email <span className='font-bold'>info@uhshacks.com</span> for more information.
+                Limited spots available. Register today to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold'>info@uhshacks.com</a> for more information.
               </p>
               <Registerbtn />
             </div>
@@ -318,7 +318,7 @@ export default function Home() {
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center'>
             <a href="https://modetocode.com" target='_blank' className='hover:scale-105 hover:rotate-3 duration-200 '><img src="/mtclogo.png" alt="Mode to Code sponsor" className='rounded-full w-auto h-96' /></a>
             <a href="https://www.sfuhs.org/" target='_blank' className='hover:scale-105 hover:rotate-3 duration-200 w-96 h-96'><img src="/uhslogo.jpg" alt="Mode to Code sponsor" className='rounded-full w-96 h-96' /></a>
-            <p className='text-xl text-center '>Interested in sponsoring UHS Hacks? Email: <span className='font-bold'>info@uhshacks.com</span></p>
+            <p className='text-xl text-center '>Interested in sponsoring UHS Hacks? Email: <a href="mailto:info@uhshacks.com" className='font-bold hover:cursor-pointer'>info@uhshacks.com</a></p>
           </div>
 
         </div>
@@ -366,7 +366,7 @@ export default function Home() {
               &copy; 2025 UHS Hacks. All rights reserved.
             </p>
             <p>Website built by <Link href="https://github.com/jacob-s-codes" target="_blank" className="hover:cursor-pointer"><span className="hover:text-black">Jacob S</span></Link></p>
-            <p className=' text-center'>Questions? Email: <span className='font-bold'>info@uhshacks.com</span></p>
+            <p className=' text-center'>Questions? Email: <a href="mailto:info@uhshacks.com" className='font-bold'>info@uhshacks.com</a></p>
           </div>
         </div>
       </footer>
