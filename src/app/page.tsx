@@ -318,7 +318,7 @@ export default function Home() {
           <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 place-items-center'>
             <a href="https://modetocode.com" target='_blank'><img src="/mtclogo.png" alt="Mode to Code sponsor" className='rounded-full w-auto h-72 hover:scale-105 hover:rotate-3 duration-200 ' /></a>
             <a href="https://www.sfuhs.org/" target='_blank'><img src="/uhslogo.jpg" alt="Mode to Code sponsor" className='rounded-full hover:scale-105 hover:rotate-3 duration-200 w-auto h-72' /></a>
-            <a href="https://www.cerebras.ai/" target='_blank'><img src="/cerebraslogo.avif" alt="Cerebras sponsor" className='hover:scale-105 hover:rotate-3 duration-200 w-auto h-72 border'/></a>
+            <a href="https://www.cerebras.ai/" target='_blank'><img src="/cerebraslogo.avif" alt="Cerebras sponsor" className='hover:scale-105 hover:rotate-3 duration-200 w-auto h-72 '/></a>
             <p className='text-xl text-center '>Interested in sponsoring UHS Hacks? Email: <a href="mailto:info@uhshacks.com" className='font-bold hover:cursor-pointer'>info@uhshacks.com</a></p>
           </div>
 
