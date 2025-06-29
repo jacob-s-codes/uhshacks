@@ -59,266 +59,291 @@ export default function Home() {
 
 
       {/* Hero Section */}
-      <main>
-        <div className="uhsbg lg:h-[calc(100vh-4rem)] h-screen  flex items-center justify-center">
+      <div className="uhsbg lg:h-[calc(100vh-4rem)] h-screen  flex items-center justify-center">
 
-          <div className="relative max-w-7xl w-full text-center flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-            <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl"><span className='text-darkred'>UHS </span><CryptoText text="Hacks 2025" /></h1>
-            <p className="mt-6 max-w-xl font-semibold lg:text-3xl text-2xl text-white">
-              Join us for a day of coding, learning, and innovation at our school's premier hackathon event
+        <div className="relative max-w-7xl w-full text-center flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+          <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl"><span className='text-darkred'>UHS </span><CryptoText text="Hacks 2025" /></h1>
+          <p className="mt-6 max-w-xl font-semibold lg:text-3xl text-2xl text-white">
+            Join us for a day of coding, learning, and innovation at our school's premier hackathon event
+          </p>
+          <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
+            <div className="relative inline-flex  group">
+              <div
+                className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+              </div>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSelDOdh_z7yWL_Vlil8nzMSyHEThYtlpgQZxdf9MAtcBmXEYg/viewform?usp=header" title="Sign up" target='_blank'
+                className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl "
+                role="button">Sign Up Now
+              </a>
+            </div>
+
+
+            <div className="relative inline-flex  group">
+              <div
+                className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+              </div>
+              <a href="https://discord.gg/69DBGBKeGz" title="Join the discord" target='_blank'
+                className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-gray-900"
+                role="button">Join The Discord
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Date and Location Section */}
+      <div className="bg-gradient-to-b from-white to-red-200">
+        <div id="about">
+          <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <h2 className='text-center pt-36  lg:text-5xl text-4xl font-black pb-2'>LOGISTICAL INFORMATION</h2>
+            <hr className='mb-12 border-2 border-black' />
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-3 ">
+              <div className="flex flex-col items-center">
+                <div className="rounded-md p-3">
+                  <svg className="h-18 w-auto text-darkred" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="mt-4 text-3xl font-medium ">September 20, 2025</h3>
+                <p className="mt-2 text-xl text-gray-700">Saturday</p>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <div className="rounded-md  p-3">
+                  <svg className="h-18 w-auto text-darkred" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <h3 className="mt-4 text-3xl font-medium">University High School</h3>
+                <Link href="https://maps.app.goo.gl/R24RfjfDNtfwdVqJ8" target='_blank'><p className="mt-2 text-xl text-gray-700 hover:text-darkred">3065 Jackson Street | Directions here</p></Link>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <div className="rounded-md  p-3">
+                  <svg className="h-18 w-auto text-darkred" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="mt-4 text-3xl font-medium ">9 AM - 6:45 PM</h3>
+                <p className="mt-2 text-xl text-gray-700">Coding, learning, and fun</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Feature Section */}
+        <div className=" py-36" >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h2 className="md:text-5xl text-3xl font-black text-black uppercase pb-2">Why Participate in UHS Hacks?</h2>
+              <hr className='border-2 border-black' />
+
+            </div>
+
+            <div className="mt-16">
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="bg-white overflow-hidden shadow-lg shadow-red-300 rounded-lg">
+                  <div className="px-4 py-5 sm:p-6">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0 bg-darkred rounded-md p-3">
+                        <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                      </div>
+                      <div className="ml-5">
+                        <h3 className="text-lg font-medium text-gray-900">Team Building</h3>
+                        <p className="mt-2 text-base text-gray-500">
+                          Form teams up to 4 students and collaborate on innovative projects
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white overflow-hidden shadow-lg shadow-red-300 rounded-lg ">
+                  <div className="px-4 py-5 sm:p-6">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0 bg-darkred rounded-md p-3">
+                        <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                      </div>
+                      <div className="ml-5">
+                        <h3 className="text-lg font-medium text-gray-900">Innovate & Learn</h3>
+                        <p className="mt-2 text-base text-gray-500">
+                          Mentors help you learn new technologies and skills
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white overflow-hidden shadow-lg shadow-red-300 rounded-lg">
+                  <div className="px-4 py-5 sm:p-6">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0 bg-darkred rounded-md p-3">
+                        <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <div className="ml-5">
+                        <h3 className="text-lg font-medium text-gray-900">Win Prizes</h3>
+                        <p className="mt-2 text-base text-gray-500">
+                          Prizes for winners across multiple categories
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Schedule */}
+        <div className='py-36 max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8' id="schedule">
+          <h2 className='lg:text-5xl text-4xl font-black uppercase text-center pb-2 '>Schedule</h2>
+          <hr className='border-2 border-black' />
+          <div className='flex flex-col items-center w-full text-2xl font-thin pt-12 gap-y-4 md:px-0 px-2'>
+            <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
+              rounded-lg bg-white '>
+              <h3 className='font-medium'>9:00 AM</h3>
+              <div className='flex flex-col items-end text-right w-full max-w-2xl'>
+                <h3 className='font-medium pb-1'>Check-In</h3>
+                <hr className='w-full border border-black' />
+
+              </div>
+            </div>
+            <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
+              rounded-lg bg-white '>
+              <h3 className='font-medium'>10:00 AM</h3>
+              <div className='flex flex-col items-end text-right w-full max-w-2xl'>
+                <h3 className='font-medium pb-1'>Theme Announced</h3>
+                <hr className='w-full border border-black' />
+
+              </div>
+            </div>
+            <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
+              rounded-lg bg-white '>
+              <h3 className='font-medium'>10:15 AM</h3>
+              <div className='flex flex-col items-end text-right max-w-2xl w-full'>
+                <h3 className='font-medium pb-1'>Hacking Starts</h3>
+                <hr className='w-full border border-black' />
+              </div>
+            </div>
+            <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
+              rounded-lg bg-white '>
+              <h3 className='font-medium'>12:00 PM</h3>
+              <div className='flex flex-col items-end text-right max-w-2xl w-full'>
+                <h3 className='font-medium pb-1'>Lunch</h3>
+                <hr className='w-full border border-black' />
+              </div>
+            </div>
+            <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
+              rounded-lg bg-white '>
+              <h3 className='font-medium'>2:30 PM</h3>
+              <div className='flex flex-col items-end text-right max-w-2xl w-full'>
+                <h3 className='font-medium pb-1'>Coding Competition</h3>
+                <hr className='w-full border border-black' />
+              </div>
+            </div>
+
+            <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
+              rounded-lg bg-white '>
+              <h3 className='font-medium'>4:00 PM</h3>
+              <div className='flex flex-col items-end text-right max-w-2xl w-full'>
+                <h3 className='font-medium pb-1'>Hacking Stops</h3>
+                <hr className='w-full border border-black' />
+              </div>
+            </div>
+
+            <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
+              rounded-lg bg-white '>
+              <h3 className='font-medium'>4:30 PM</h3>
+              <div className='flex flex-col items-end text-right max-w-2xl w-full'>
+                <h3 className='font-medium pb-1'>Demos</h3>
+                <hr className='w-full border border-black' />
+              </div>
+            </div>
+
+            <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
+              rounded-lg bg-white '>
+              <h3 className='font-medium'>6:00 PM</h3>
+              <div className='flex flex-col items-end text-right max-w-2xl w-full'>
+                <h3 className='font-medium pb-1'>Judging</h3>
+                <hr className='w-full border border-black' />
+              </div>
+            </div>
+
+            <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-12
+              rounded-lg bg-white '>
+              <h3 className='font-medium'>6:30 PM</h3>
+              <div className='flex flex-col items-end text-right max-w-2xl w-full'>
+                <h3 className='font-medium pb-1'>Winners Announced!</h3>
+                <hr className='w-full border border-black' />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      {/* CTA Section */}
+      <div className="bg-darkred">
+        <div className="max-w-7xl flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8" ref={animateup}>
+          <div className='pr-8 text-white' >
+            <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase" >
+              <span className="block">Ready to hack?</span>
+              <span className="block">Registration is now open!</span>
+            </h2>
+            <p className="my-8 text-xl leading-6 ">
+              Limited spots available. Register today to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold'>info@uhshacks.com</a> for more information.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
-              <div className="relative inline-flex  group">
-                <div
-                  className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
-                </div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSelDOdh_z7yWL_Vlil8nzMSyHEThYtlpgQZxdf9MAtcBmXEYg/viewform?usp=header" title="Sign up" target='_blank'
-                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl "
-                  role="button">Sign Up Now
-                </a>
-              </div>
+            <Registerbtn />
+          </div>
+          <img src="/uhsimg.png" alt="" className='max-w-2xl rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4' />
+        </div>
+      </div>
 
+      {/* <div className="pt-36 sm:px-6 lg:px-8 px-4" id="theteam">
+        <div className="max-w-7xl mx-auto">
+          <h2 className='text-center lg:text-5xl text-4xl font-black'>OUR TEAM</h2>
+          <hr className='mb-8 mt-1 border-2 border-black' />
 
-              <div className="relative inline-flex  group">
-                <div
-                  className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
-                </div>
-                <a href="https://discord.gg/69DBGBKeGz" title="Join the discord" target='_blank'
-                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-gray-900"
-                  role="button">Join The Discord
-                </a>
-              </div>
+          <div className="grid grid-cols-4 gap-2 text-white">
+            <div className="flex flex-col items-start bg-darkred p-4 rounded-lg gap-y-2 border-black border-4">
+              <img src="/people/jacobpic.png" alt="" className="rounded-lg h-72 w-auto border-2 border-white"/>
+              <h3 className="text-2xl font-bold">&#123; Jacob Shaul &#125;</h3>
+              <h4 className="text-xl font-bold">Lead Organizer</h4>
+              <p className="text-lg font-medium">Looking forward to bringing opportunities to high school students in the Bay Area!</p>
+            </div>
+
+            <div className="flex flex-col items-start bg-darkred p-4 rounded-lg gap-y-2 border-black border-4">
+              <img src="/people/rowanpic.png" alt="" className="rounded-lg h-72 border-2 border-white"/>
+              <h3 className="text-2xl font-bold">&#123; Jacob Shaul &#125;</h3>
+              <h4 className="text-xl font-bold">Lead Organizer</h4>
+              <p className="text-lg font-medium">Looking forward to bringing opportunities to high school students in the Bay Area!</p>
             </div>
           </div>
         </div>
+      </div> */}
 
-        {/* Date and Location Section */}
-        <div className="bg-gradient-to-b from-white to-red-200">
-          <div id="about">
-            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-              <h2 className='text-center pt-36  lg:text-5xl text-4xl font-black pb-2'>LOGISTICAL INFORMATION</h2>
-              <hr className='mb-12 border-2 border-black' />
-              <div className="grid grid-cols-1 gap-8 md:grid-cols-3 ">
-                <div className="flex flex-col items-center">
-                  <div className="rounded-md p-3">
-                    <svg className="h-18 w-auto text-darkred" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <h3 className="mt-4 text-3xl font-medium ">September 20, 2025</h3>
-                  <p className="mt-2 text-xl text-gray-700">Saturday</p>
-                </div>
-
-                <div className="flex flex-col items-center">
-                  <div className="rounded-md  p-3">
-                    <svg className="h-18 w-auto text-darkred" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <h3 className="mt-4 text-3xl font-medium">University High School</h3>
-                  <Link href="https://maps.app.goo.gl/R24RfjfDNtfwdVqJ8" target='_blank'><p className="mt-2 text-xl text-gray-700 hover:text-darkred">3065 Jackson Street | Directions here</p></Link>
-                </div>
-
-                <div className="flex flex-col items-center">
-                  <div className="rounded-md  p-3">
-                    <svg className="h-18 w-auto text-darkred" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <h3 className="mt-4 text-3xl font-medium ">9 AM - 6:45 PM</h3>
-                  <p className="mt-2 text-xl text-gray-700">Coding, learning, and fun</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Feature Section */}
-          <div className=" py-36" >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center">
-                <h2 className="md:text-5xl text-3xl font-black text-black uppercase pb-2">Why Participate in UHS Hacks?</h2>
-                <hr className='border-2 border-black' />
-
-              </div>
-
-              <div className="mt-16">
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                  <div className="bg-white overflow-hidden shadow-lg shadow-red-300 rounded-lg">
-                    <div className="px-4 py-5 sm:p-6">
-                      <div className="flex items-center">
-                        <div className="flex-shrink-0 bg-darkred rounded-md p-3">
-                          <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                          </svg>
-                        </div>
-                        <div className="ml-5">
-                          <h3 className="text-lg font-medium text-gray-900">Team Building</h3>
-                          <p className="mt-2 text-base text-gray-500">
-                            Form teams up to 4 students and collaborate on innovative projects
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-white overflow-hidden shadow-lg shadow-red-300 rounded-lg ">
-                    <div className="px-4 py-5 sm:p-6">
-                      <div className="flex items-center">
-                        <div className="flex-shrink-0 bg-darkred rounded-md p-3">
-                          <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                          </svg>
-                        </div>
-                        <div className="ml-5">
-                          <h3 className="text-lg font-medium text-gray-900">Innovate & Learn</h3>
-                          <p className="mt-2 text-base text-gray-500">
-                            Mentors help you learn new technologies and skills
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-white overflow-hidden shadow-lg shadow-red-300 rounded-lg">
-                    <div className="px-4 py-5 sm:p-6">
-                      <div className="flex items-center">
-                        <div className="flex-shrink-0 bg-darkred rounded-md p-3">
-                          <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div className="ml-5">
-                          <h3 className="text-lg font-medium text-gray-900">Win Prizes</h3>
-                          <p className="mt-2 text-base text-gray-500">
-                            Prizes for winners across multiple categories
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Schedule */}
-          <div className='py-36 max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8' id="schedule">
-            <h2 className='lg:text-5xl text-4xl font-black uppercase text-center pb-2 '>Schedule</h2>
-            <hr className='border-2 border-black' />
-            <div className='flex flex-col items-center w-full text-2xl font-thin pt-12 gap-y-4 md:px-0 px-2'>
-              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
-              rounded-lg bg-white '>
-                <h3 className='font-medium'>9:00 AM</h3>
-                <div className='flex flex-col items-end text-right w-full max-w-2xl'>
-                  <h3 className='font-medium pb-1'>Check-In</h3>
-                  <hr className='w-full border border-black' />
-
-                </div>
-              </div>
-              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
-              rounded-lg bg-white '>
-                <h3 className='font-medium'>10:00 AM</h3>
-                <div className='flex flex-col items-end text-right w-full max-w-2xl'>
-                  <h3 className='font-medium pb-1'>Theme Announced</h3>
-                  <hr className='w-full border border-black' />
-
-                </div>
-              </div>
-              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
-              rounded-lg bg-white '>
-                <h3 className='font-medium'>10:15 AM</h3>
-                <div className='flex flex-col items-end text-right max-w-2xl w-full'>
-                  <h3 className='font-medium pb-1'>Hacking Starts</h3>
-                  <hr className='w-full border border-black' />
-                </div>
-              </div>
-              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
-              rounded-lg bg-white '>
-                <h3 className='font-medium'>12:00 PM</h3>
-                <div className='flex flex-col items-end text-right max-w-2xl w-full'>
-                  <h3 className='font-medium pb-1'>Lunch</h3>
-                  <hr className='w-full border border-black' />
-                </div>
-              </div>
-              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
-              rounded-lg bg-white '>
-                <h3 className='font-medium'>2:30 PM</h3>
-                <div className='flex flex-col items-end text-right max-w-2xl w-full'>
-                  <h3 className='font-medium pb-1'>Coding Competition</h3>
-                  <hr className='w-full border border-black' />
-                </div>
-              </div>
-
-              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
-              rounded-lg bg-white '>
-                <h3 className='font-medium'>4:00 PM</h3>
-                <div className='flex flex-col items-end text-right max-w-2xl w-full'>
-                  <h3 className='font-medium pb-1'>Hacking Stops</h3>
-                  <hr className='w-full border border-black' />
-                </div>
-              </div>
-
-              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
-              rounded-lg bg-white '>
-                <h3 className='font-medium'>4:30 PM</h3>
-                <div className='flex flex-col items-end text-right max-w-2xl w-full'>
-                  <h3 className='font-medium pb-1'>Demos</h3>
-                  <hr className='w-full border border-black' />
-                </div>
-              </div>
-
-              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
-              rounded-lg bg-white '>
-                <h3 className='font-medium'>6:00 PM</h3>
-                <div className='flex flex-col items-end text-right max-w-2xl w-full'>
-                  <h3 className='font-medium pb-1'>Judging</h3>
-                  <hr className='w-full border border-black' />
-                </div>
-              </div>
-
-              <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-12
-              rounded-lg bg-white '>
-                <h3 className='font-medium'>6:30 PM</h3>
-                <div className='flex flex-col items-end text-right max-w-2xl w-full'>
-                  <h3 className='font-medium pb-1'>Winners Announced!</h3>
-                  <hr className='w-full border border-black' />
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-        {/* CTA Section */}
-        <div className="bg-darkred">
-          <div className="max-w-7xl flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8" ref={animateup}>
-            <div className='pr-8 text-white' >
-              <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase" >
-                <span className="block">Ready to hack?</span>
-                <span className="block">Registration is now open!</span>
-              </h2>
-              <p className="my-8 text-xl leading-6 ">
-                Limited spots available. Register today to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold'>info@uhshacks.com</a> for more information.
-              </p>
-              <Registerbtn />
-            </div>
-            <img src="/uhsimg.png" alt="" className='max-w-2xl rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4' />
-          </div>
-        </div>
-      </main>
 
       <div className='pt-36 bg-white sm:px-6 lg:px-8 px-4' id="sponsors">
 
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-center lg:text-5xl text-4xl font-black'>THANK YOU TO OUR SPONSORS</h2>
           <hr className='mb-8 mt-1 border-2 border-black' />
-          <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 gap-8 place-items-center'>
-            <a href="https://www.sfuhs.org/" target='_blank'><img src="/uhslogo.jpg" alt="SFUHS sponsor" className='rounded-full hover:scale-105 hover:rotate-3 duration-200 w-auto h-48' /></a>
-            <a href="https://www.cerebras.ai/" target='_blank'><img src="/cerebraslogo.avif" alt="Cerebras sponsor" className='hover:scale-105 hover:rotate-3 duration-200 h-72' /></a>
-            <a href="https://modetocode.com" target='_blank'><img src="/mtclogo.png" alt="Mode to Code sponsor" className='rounded-full w-auto h-48 hover:scale-105 hover:rotate-3 duration-200 ' /></a>
+          <div className='grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 gap-8 gap-y-12 place-items-center'>
+            <a href="https://vercel.com/home" target='_blank'><img src="/vercel-logotype-light.png" alt="Vercel sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
+            <a href="https://www.sfuhs.org/" target='_blank'><img src="/uhslogo.jpg" alt="SFUHS sponsor" className='rounded-full hover:scale-105 hover:rotate-3 duration-200 w-full lg:h-48 h-36' /></a>
+            <a href="https://www.twelvelabs.io/" target='_blank'><img src="/twelvelabslogo.jpg" alt="Twelve Labs sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
+            <a href="https://www.cerebras.ai/" target='_blank'><img src="/cerebraslogo.png" alt="Cerebras sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
+            <a href="https://modetocode.com" target='_blank'><img src="/mtclogo.png" alt="Mode to Code sponsor" className='rounded-lg w-auto lg:h-48 h-36 hover:scale-105 hover:rotate-3 duration-200 ' /></a>
+            {/* <a href="https://gen.xyz/" target='_blank'><img src="/xyz-logo-color.png" alt="XYZ sponsor" className='hover:scale-105 hover:rotate-3 duration-200 lg:h-48 h-36' /></a> */}
 
 
           </div>
