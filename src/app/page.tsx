@@ -1,8 +1,8 @@
 "use client";
-import gsap from "gsap";
-import { ScrollTrigger } from 'gsap/all';
-import { useEffect, useRef } from 'react';
-import styles from './Home.module.css';
+// import gsap from "gsap";
+// import { ScrollTrigger } from 'gsap/all';
+// import { useEffect, useRef } from 'react';
+// import styles from './Home.module.css';
 import Registerbtn from './components/Registerbtn';
 
 import AccordionDemo from './components/Accoridion';
@@ -10,47 +10,47 @@ import Link from 'next/link';
 import CryptoText from './components/CryptoTextOnce';
 
 export default function Home() {
-  const animateup = useRef(null);
+  // const animateup = useRef(null);
 
-  useEffect(() => {
-    // Only run on client-side
-    if (typeof window !== 'undefined') {
-      // Register ScrollTrigger once
-      gsap.registerPlugin(ScrollTrigger);
+  // useEffect(() => {
+  //   // Only run on client-side
+  //   if (typeof window !== 'undefined') {
+  //     // Register ScrollTrigger once
+  //     gsap.registerPlugin(ScrollTrigger);
 
-      // Get the DOM element from the ref
-      const element = animateup.current;
+  //     // Get the DOM element from the ref
+  //     const element = animateup.current;
 
-      // Create the animation
-      const animation = gsap.fromTo(element,
-        // Starting properties
-        {
-          y: 400, // Start from far left (negative value)
-          opacity: 0.5,
-        },
-        // Ending properties
-        {
-          y: 0, // Move to original position
-          opacity: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: element,
-            start: "top 90%",
-            end: "top 40%",
-            scrub: 0.5,
-            invalidateOnRefresh: true,
-            // markers: true, // Uncomment for debugging
-          }
-        }
-      );
+  //     // Create the animation
+  //     const animation = gsap.fromTo(element,
+  //       // Starting properties
+  //       {
+  //         y: 400, // Start from far left (negative value)
+  //         opacity: 0.5,
+  //       },
+  //       // Ending properties
+  //       {
+  //         y: 0, // Move to original position
+  //         opacity: 1,
+  //         ease: "power2.out",
+  //         scrollTrigger: {
+  //           trigger: element,
+  //           start: "top 90%",
+  //           end: "top 40%",
+  //           scrub: 0.5,
+  //           invalidateOnRefresh: true,
+  //           // markers: true, // Uncomment for debugging
+  //         }
+  //       }
+  //     );
 
-      // Cleanup function to kill the animation when component unmounts
-      return () => {
-        if (animation) animation.kill();
-        ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-      };
-    }
-  }, []);
+  //     // Cleanup function to kill the animation when component unmounts
+  //     return () => {
+  //       if (animation) animation.kill();
+  //       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+  //     };
+  //   }
+  // }, []);
 
   return (
     <div className=" bg-gray-50">
@@ -59,13 +59,48 @@ export default function Home() {
 
 
       {/* Hero Section */}
-      <div className="uhsbg lg:h-[calc(100vh-4rem)] h-screen  flex items-center justify-center">
+      {/* <div className="homebg  h-screen  ">
+        <div className='flex items-center justify-center'>
+          <div className="relative max-w-7xl w-full text-center flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl"><span className='text-darkred'>UHS </span><CryptoText text="Hacks 2025" /></h1>
+            <p className="mt-6 max-w-xl font-semibold lg:text-3xl text-2xl text-white">
+              Join us for a day of coding, learning, and innovation at our school's premier hackathon event
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
+              <div className="relative inline-flex  group">
+                <div
+                  className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSelDOdh_z7yWL_Vlil8nzMSyHEThYtlpgQZxdf9MAtcBmXEYg/viewform?usp=header" title="Sign up" target='_blank'
+                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl "
+                  role="button">Sign Up Now
+                </a>
+              </div>
 
-        <div className="relative max-w-7xl w-full text-center flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl"><span className='text-darkred'>UHS </span><CryptoText text="Hacks 2025" /></h1>
-          <p className="mt-6 max-w-xl font-semibold lg:text-3xl text-2xl text-white">
+
+              <div className="relative inline-flex  group">
+                <div
+                  className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+                </div>
+                <a href="https://discord.gg/69DBGBKeGz" title="Join the discord" target='_blank'
+                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-gray-900"
+                  role="button">Join The Discord
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div> 
+
+
+      </div> */}
+      <div className="homebg h-screen">
+        <div className="h-full flex flex-col items-center justify-center px-4">
+
+          <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl text-center"><span className='text-darkred'>UHS </span><CryptoText text="Hacks 2025" /></h1>
+          <h2 className="mt-6 max-w-xl text-center font-semibold lg:text-3xl text-2xl text-white">
             Join us for a day of coding, learning, and innovation at our school's premier hackathon event
-          </p>
+          </h2>
           <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
             <div className="relative inline-flex  group">
               <div
@@ -293,7 +328,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <div className="bg-darkred">
-        <div className="max-w-7xl flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8" ref={animateup}>
+        <div className="max-w-7xl flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <div className='pr-8 text-white' >
             <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase" >
               <span className="block">Ready to hack?</span>

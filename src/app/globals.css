@@ -43,15 +43,16 @@
 }
 
 
-.uhsbg {
+.homebg {
   background-image: url("/uhsimg.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: rgb(114, 112, 112);
+  background-color: rgb(132, 131, 131);
   background-blend-mode: multiply;
-  background-attachment: fixed;
-} 
+  height: 100vh;
+  width: 100vw;
+}
 
 html,
 body {
