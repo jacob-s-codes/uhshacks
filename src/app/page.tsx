@@ -339,7 +339,7 @@ export default function Home() {
           <hr className='mb-8 mt-1 border-2 border-black' />
           <div className='grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 gap-8 gap-y-12 place-items-center'>
             <a href="https://vercel.com/home" target='_blank'><img src="/vercel-logotype-light.png" alt="Vercel sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
-            <a href="https://www.sfuhs.org/" target='_blank'><img src="/uhslogo.jpg" alt="SFUHS sponsor" className='rounded-full hover:scale-105 hover:rotate-3 duration-200 w-full lg:h-48 h-36' /></a>
+            <a href="https://www.sfuhs.org/" target='_blank'><img src="/uhslogo.jpg" alt="SFUHS sponsor" className='rounded-full hover:scale-105 hover:rotate-3 duration-200 xl:w-52 w-44' /></a>
             <a href="https://www.twelvelabs.io/" target='_blank'><img src="/twelvelabslogo.jpg" alt="Twelve Labs sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
             <a href="https://www.cerebras.ai/" target='_blank'><img src="/cerebraslogo.png" alt="Cerebras sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
             <a href="https://modetocode.com" target='_blank'><img src="/mtclogo.png" alt="Mode to Code sponsor" className='rounded-lg w-auto lg:h-48 h-36 hover:scale-105 hover:rotate-3 duration-200 ' /></a>
