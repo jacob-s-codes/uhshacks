@@ -382,7 +382,7 @@ export default function Home() {
 
 
           </div>
-          <p className='text-xl text-center pt-8'>Interested in sponsoring UHS Hacks? Email: <a href="mailto:info@uhshacks.com" className='font-bold hover:cursor-pointer'>info@uhshacks.com</a></p>
+          <p className='text-xl text-center pt-8'>Interested in sponsoring UHS Hacks? Email: <a href="mailto:info@uhshacks.com" className='font-bold hover:cursor-pointer hover:underline'>info@uhshacks.com</a></p>
 
         </div>
       </div>
