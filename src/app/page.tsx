@@ -378,6 +378,7 @@ export default function Home() {
             <a href="https://www.twelvelabs.io/" target='_blank'><img src="/twelvelabslogo.jpg" alt="Twelve Labs sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
             <a href="https://www.swami3.com/" target='_blank'><img src="/swami3logo.png" alt="Swami 3 sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
             <a href="https://www.cerebras.ai/" target='_blank'><img src="/cerebraslogo.png" alt="Cerebras sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
+            <a href="https://engineering.berkeley.edu/" target='_blank'><img src="/berkleyengineering.png" alt="Berkley CoE sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
             {/* <a href="https://modetocode.com" target='_blank'><img src="/mtclogo.png" alt="Mode to Code sponsor" className='rounded-lg w-auto lg:h-48 h-36 hover:scale-105 hover:rotate-3 duration-200 ' /></a> */}
             {/* <a href="https://gen.xyz/" target='_blank'><img src="/xyz-logo-color.png" alt="XYZ sponsor" className='hover:scale-105 hover:rotate-3 duration-200 lg:h-48 h-36' /></a> */}
 
