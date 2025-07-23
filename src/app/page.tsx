@@ -430,7 +430,7 @@ export default function Home() {
               &copy; 2025 UHS Hacks. All rights reserved.
             </p>
             <p>Website built by <Link href="https://github.com/jacob-s-codes" target="_blank" className="hover:cursor-pointer"><span className="hover:text-black">Jacob S</span></Link></p>
-            <p className=' text-center'>Questions? Email: <a href="mailto:info@uhshacks.com" className='font-bold'>info@uhshacks.com</a></p>
+            <p className=' text-center'>Questions? Email: <a href="mailto:info@uhshacks.com" className='font-bold hover:underline'>info@uhshacks.com</a></p>
           </div>
         </div>
       </footer>
