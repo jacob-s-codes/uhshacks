@@ -376,6 +376,7 @@ export default function Home() {
             <a href="https://vercel.com/home" target='_blank'><img src="/vercel-logotype-light.png" alt="Vercel sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
             <a href="https://www.sfuhs.org/" target='_blank'><img src="/uhslogo.jpg" alt="SFUHS sponsor" className='rounded-full hover:scale-105 hover:rotate-3 duration-200 xl:w-52 w-44' /></a>
             <a href="https://www.twelvelabs.io/" target='_blank'><img src="/twelvelabslogo.jpg" alt="Twelve Labs sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
+            <a href="https://www.atlassian.com/" target='_blank'><img src="/atlassianlogo.png" alt="Atlassian" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
             <a href="https://www.swami3.com/" target='_blank'><img src="/swami3logo.png" alt="Swami 3 sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
             <a href="https://www.cerebras.ai/" target='_blank'><img src="/cerebraslogo.png" alt="Cerebras sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
             <a href="https://engineering.berkeley.edu/" target='_blank'><img src="/coelogo.webp" alt="Berkley CoE sponsor" className='hover:scale-105 hover:rotate-3 duration-200 xl:w-96 w-72' /></a>
