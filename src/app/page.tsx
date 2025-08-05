@@ -1,12 +1,13 @@
+"use client";
 import HomeClient from './HomeClient';
 
-export const metadata = { 
-  title: "UHS Hacks | High School Hackathon",
-  description: "Join UHS Hacks, the premier high school hackathon where students collaborate, innovate, and build amazing projects!",
-  icons: {
-    icon: '/favicon.ico'
-  },
-}
+// export const metadata = { 
+//   title: "UHS Hacks | High School Hackathon",
+//   description: "Join UHS Hacks, the premier high school hackathon where students collaborate, innovate, and build amazing projects!",
+//   icons: {
+//     icon: '/favicon.ico'
+//   },
+// }
 
 export default function Home() {
   // const animateup = useRef(null);
