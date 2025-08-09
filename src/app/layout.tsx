@@ -37,6 +37,7 @@ export default function RootLayout({
       >
         <ReactLenis root>
           <Navbar />
+          <Analytics/>
           {children}
         </ReactLenis>
       </body>
