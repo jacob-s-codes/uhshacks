@@ -50,7 +50,7 @@ const HomeClient = () => {
       <div className="homebg h-screen">
         <div className="h-full flex flex-col items-center justify-center px-4">
 
-          <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl text-center"><span className='text-darkred'>UHS </span><CryptoText text="Hacks 2025" /></h1>
+          <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl text-center"><span className='text-darkred' style={{ WebkitTextStroke: '4px black' }}>UHS </span><CryptoText text="HACKS 2025" /></h1>
           <h2 className="mt-6 max-w-xl text-center font-semibold lg:text-3xl text-2xl text-white">
             Join us for a day of coding, learning, and innovation at our school's premier hackathon event
           </h2>
