@@ -51,7 +51,7 @@ const HomeClient = () => {
         <div className="h-full flex flex-col items-center justify-center px-4">
 
           <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl text-center"><span className='text-darkred' style={{ WebkitTextStroke: '4px black' }}>UHS </span><CryptoText text="HACKS 2025" /></h1>
-          <h2 className="mt-6 max-w-xl text-center font-semibold lg:text-3xl text-2xl text-white">
+          <h2 className="mt-6 max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white">
             Join us for a day of coding, learning, and innovation at our school's premier hackathon event
           </h2>
           <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
@@ -285,10 +285,10 @@ const HomeClient = () => {
           <div className='pr-8 text-white' >
             <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase" >
               <span className="block">Ready to hack?</span>
-              <span className="block">Registration is now open!</span>
+              <span className="block">Registration is opening soon!</span>
             </h2>
             <p className="my-8 text-xl leading-6 ">
-              Limited spots available. Register today to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold'>info@uhshacks.com</a> for more information.
+              Limited spots available. Register soon to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold'>info@uhshacks.com</a> for more information.
             </p>
             <Registerbtn />
           </div>
