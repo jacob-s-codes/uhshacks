@@ -20,7 +20,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center space-x-8 text-lg">
+                    <div className="hidden md:flex items-center lg:space-x-8 space-x-2 text-lg">
                         <Link href="#about" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#about')?.scrollIntoView({behavior:'smooth'});
@@ -34,6 +34,10 @@ const Navbar = () => {
                             e.preventDefault();
                             document.querySelector('#sponsors')?.scrollIntoView({behavior:'smooth'});
                         }} className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300">Sponsors</Link>
+                        <Link href="#judges" onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#judges')?.scrollIntoView({behavior:'smooth'});
+                        }} className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300">Judges</Link>
                         <Link href="#FAQ" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#FAQ')?.scrollIntoView({behavior:'smooth'});
@@ -60,7 +64,7 @@ const Navbar = () => {
 
             {/* Mobile Navigation with animation */}
             <div 
-                className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}
+                className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'}`}
             >
                 <hr className={`text-black border-1 border-black transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0'}`}/>
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -75,16 +79,21 @@ const Navbar = () => {
                         document.querySelector('#schedule')?.scrollIntoView({behavior:'smooth'});
                         setIsMenuOpen(false);
                     }} className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium transition-colors duration-300">Schedule</Link>
-                    <Link href="#faq" onClick={(e) => {
+                    <Link href="#judges" onClick={(e) => {
                         e.preventDefault();
-                        document.querySelector('#FAQ')?.scrollIntoView({behavior:'smooth'});
+                        document.querySelector('#judges')?.scrollIntoView({behavior:'smooth'});
                         setIsMenuOpen(false);
-                    }} className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium transition-colors duration-300">FAQ</Link>
+                    }} className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium transition-colors duration-300">Judges</Link>
                     <Link href="#sponsors" onClick={(e) => {
                         e.preventDefault();
                         document.querySelector('#sponsors')?.scrollIntoView({behavior:'smooth'});
                         setIsMenuOpen(false);
                     }} className="block text-white hover:bg-white hover:text-black px-3 py-2 font-medium transition-colors duration-300">Sponsors</Link>
+                    <Link href="#faq" onClick={(e) => {
+                        e.preventDefault();
+                        document.querySelector('#FAQ')?.scrollIntoView({behavior:'smooth'});
+                        setIsMenuOpen(false);
+                    }} className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium transition-colors duration-300">FAQ</Link>
                     <Registerbtn/>
                 </div>
             </div>

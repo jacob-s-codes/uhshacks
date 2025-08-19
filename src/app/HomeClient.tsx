@@ -1,4 +1,4 @@
-import  Link from 'next/link'
+import Link from 'next/link'
 import React from 'react'
 import AccordionDemo from './components/Accoridion'
 import CryptoText from './components/CryptoTextOnce'
@@ -339,6 +339,22 @@ const HomeClient = () => {
 
           </div>
           <p className='text-xl text-center pt-8'>Interested in sponsoring UHS Hacks? Email: <a href="mailto:info@uhshacks.com" className='font-bold hover:cursor-pointer hover:underline'>info@uhshacks.com</a></p>
+
+        </div>
+      </div>
+
+      <div className='pt-36 bg-white sm:px-6 lg:px-8 px-4' id="judges">
+
+        <div className='max-w-7xl mx-auto'>
+          <h2 className='text-center lg:text-5xl text-4xl font-black'>JUDGES</h2>
+          <hr className='mb-8 mt-1 border-2 border-black' />
+          {/* <div className='grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 gap-8 gap-y-12 place-items-center'> */}
+          <div className='text-center'>
+            <p className='text-xl'>Coming soon!</p>
+
+
+          </div>
+
 
         </div>
       </div>
