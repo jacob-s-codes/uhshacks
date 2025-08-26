@@ -349,16 +349,24 @@ const HomeClient = () => {
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-center lg:text-5xl text-4xl font-black'>JUDGES</h2>
           <hr className='mb-8 mt-1 border-2 border-black' />
-          <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 gap-y-12 place-items-center'>
-          {/* <div className='text-center'>
-            <p className='text-xl'>Coming soon!</p> */}
-            <Judges name="Andy Denmark" bio="Andy Denmark is a seasoned technology executive and co-founder of Chairish, a curated online marketplace for pre-owned, high-end home furnishings. Since helping launch the company in February 2013, he has served as its CTO, driving innovation and overseeing the platform&apos;s technical development, security, and server operations. Chairish was acquired by Auction Technology Group in 2025. With over two decades of industry experience, Andy previously co-founded TripIt (acquired by Concur Technologies in 2011), a first of its kind online travel itinerary organizer, and held senior engineering roles at SAP/Concur and Opsware/Loudcloud. He holds both a Masters in Computer Science and a Bachelors in Electrical Engineering from the Columbia University School of Engineering and Applied Science. He is based in the San Francisco Bay Area.." link="https://www.linkedin.com/in/andydenmark/" image="/people/andypic2.jpg" title="VP of Engineering at Chairish"/>
-            
 
-
+          {/* Option 1: Use items-start to align cards to top */}
+          <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 gap-y-12 gap-x-8 place-items-center items-start'>
+            <Judges
+              name="Andy Denmark"
+              bio1="Andy Denmark is a seasoned technology executive and co-founder of Chairish, a curated online marketplace for pre-owned, high-end home furnishings. Since helping launch the company in February 2013, he has served as its CTO, driving innovation and overseeing the platform's technical development, security, and server operations. Chairish was acquired by Auction Technology Group in 2025." bio2="With over two decades of industry experience, Andy previously co-founded TripIt (acquired by Concur Technologies in 2011), a first of its kind online travel itinerary organizer, and held senior engineering roles at SAP/Concur and Opsware/Loudcloud." bio3="He holds both a Masters in Computer Science and a Bachelors in Electrical Engineering from the Columbia University School of Engineering and Applied Science. He is based in the San Francisco Bay Area."
+              link="https://www.linkedin.com/in/andydenmark/"
+              image="/people/andypic2.jpg"
+              title="VP of Engineering at Chairish"
+            />
+            <Judges
+              name="Jeff McConathy"
+              bio1="Jeff McConathy is currently the VP of Product & Engineering at Sunday, a startup that's reinventing the lawn and garden space. Previously, he has led engineering teams at Niantic, Kasa Living and 6D.ai." bio2="Jeff was employee #4 at Trulia where he helped build and lead the engineering team through IPO and a multi-billion dollar acquisition. He has held leadership roles building software and engineering teams for 25+ years, building a strong expertise focused on startups and cutting edge innovation for both consumer and enterprise markets." bio3="He holds a Bachelor's degree from Penn State University and is based in San Francisco."
+              link="https://www.linkedin.com/in/jeffmcconathy/"
+              image="/people/jeffimg.jpg"
+              title="VP of Product & Engineering at Sunday"
+            />
           </div>
-
-
         </div>
       </div>
 
