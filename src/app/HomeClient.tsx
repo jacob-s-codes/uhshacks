@@ -3,6 +3,7 @@ import React from 'react'
 import AccordionDemo from './components/Accoridion'
 import CryptoText from './components/CryptoTextOnce'
 import Registerbtn from './components/Registerbtn'
+import Judges from './components/Judge'
 
 const HomeClient = () => {
   return (
@@ -348,9 +349,11 @@ const HomeClient = () => {
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-center lg:text-5xl text-4xl font-black'>JUDGES</h2>
           <hr className='mb-8 mt-1 border-2 border-black' />
-          {/* <div className='grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 gap-8 gap-y-12 place-items-center'> */}
-          <div className='text-center'>
-            <p className='text-xl'>Coming soon!</p>
+          <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 gap-y-12 place-items-center'>
+          {/* <div className='text-center'>
+            <p className='text-xl'>Coming soon!</p> */}
+            <Judges name="Andy Denmark" bio="Andy Denmark is a seasoned technology executive and co-founder of Chairish, a curated online marketplace for pre-owned, high-end home furnishings. Since helping launch the company in February 2013, he has served as its CTO, driving innovation and overseeing the platform’s technical development, security, and server operations. Chairish was acquired by Auction Technology Group in 2025. With over two decades of industry experience, Andy previously co-founded TripIt (acquired by Concur Technologies in 2011), a first of its kind online travel itinerary organizer, and held senior engineering roles at SAP/Concur and Opsware/Loudcloud. He holds both a Masters in Computer Science and a Bachelors in Electrical Engineering from the Columbia University School of Engineering and Applied Science. He is based in the San Francisco Bay Area.." link="https://www.linkedin.com/in/andydenmark/" image="/people/andypic2.jpg" title="VP of Engineering at Chairish"/>
+            
 
 
           </div>
