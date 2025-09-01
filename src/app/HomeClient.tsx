@@ -411,7 +411,7 @@ const HomeClient = () => {
             />
             <Person
               name="Ethan Printz"
-              bio="Hi, I&apos;m Ethan. I like all types of programming, including competitive programming, web, app, game development, and math and physics visualizations."
+              bio="Hi, I&apos;m Ethan and excited to volunteer with UHS Hacks. I like all types of programming, including competitive programming, web, app, game development, and math and physics visualizations. "
               image="/people/ethanpic.jpg"
               title="Volunteer"
             />
