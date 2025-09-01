@@ -11,16 +11,16 @@ const Navbar = () => {
     
     return (
         <nav className={`bg-darkred shadow-lg text-white sticky top-0 z-50 transition-colors duration-300`} id="navbar">
-            <div className="max-w-7xl mx-auto px-4 ">
+            <div className="max-w-[1450px] mx-auto px-4 ">
                 <div className="flex justify-between h-16">
                     <div className="flex items-center">
                         <div className="flex-shrink-0 flex items-center">
-                            <Link href="/" ><Image width={500} height={500} src="/uhshacks.png" alt="UHS Hacks" className='lg:w-64 md:w-40 w-52 h-auto pb-2'></Image></Link>
+                            <Link href="/" ><Image width={500} height={500} src="/uhshacks.png" alt="UHS Hacks" className='lg:w-64 md:w-40 w-52 h-auto lg:pb-2 pb-1'></Image></Link>
                         </div>
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center lg:space-x-8 space-x-2 text-lg">
+                    <div className="hidden md:flex items-center xl:space-x-8 lg:space-x-4 space-x-0.5 xl:text-lg text-base">
                         <Link href="#about" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#about')?.scrollIntoView({behavior:'smooth'});
@@ -38,6 +38,10 @@ const Navbar = () => {
                             e.preventDefault();
                             document.querySelector('#judges')?.scrollIntoView({behavior:'smooth'});
                         }} className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300">Judges</Link>
+                        <Link href="#theteam" onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#theteam')?.scrollIntoView({behavior:'smooth'});
+                        }} className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300">Team</Link>
                         <Link href="#FAQ" onClick={(e) => {
                             e.preventDefault();
                             document.querySelector('#FAQ')?.scrollIntoView({behavior:'smooth'});
@@ -64,7 +68,7 @@ const Navbar = () => {
 
             {/* Mobile Navigation with animation */}
             <div 
-                className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'}`}
+                className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-82 opacity-100' : 'max-h-0 opacity-0'}`}
             >
                 <hr className={`text-black border-1 border-black transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0'}`}/>
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -89,6 +93,11 @@ const Navbar = () => {
                         document.querySelector('#sponsors')?.scrollIntoView({behavior:'smooth'});
                         setIsMenuOpen(false);
                     }} className="block text-white hover:bg-white hover:text-black px-3 py-2 font-medium transition-colors duration-300">Sponsors</Link>
+                    <Link href="#theteam" onClick={(e) => {
+                        e.preventDefault();
+                        document.querySelector('#theteam')?.scrollIntoView({behavior:'smooth'});
+                        setIsMenuOpen(false);
+                    }} className="block text-white hover:bg-white hover:text-black px-3 py-2 font-medium transition-colors duration-300">Team</Link>
                     <Link href="#faq" onClick={(e) => {
                         e.preventDefault();
                         document.querySelector('#FAQ')?.scrollIntoView({behavior:'smooth'});

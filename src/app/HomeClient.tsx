@@ -4,6 +4,7 @@ import AccordionDemo from './components/Accoridion'
 import CryptoText from './components/CryptoTextOnce'
 import Registerbtn from './components/Registerbtn'
 import Judges from './components/Judge'
+import Person from './components/Person'
 
 const HomeClient = () => {
   return (
@@ -286,7 +287,7 @@ const HomeClient = () => {
           <div className='pr-8 text-white' >
             <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase" >
               <span className="block">Ready to hack?</span>
-              <span className="block">Registration is opening soon!</span>
+              <span className="block">Registration is now open!</span>
             </h2>
             <p className="my-8 text-xl leading-6 ">
               Limited spots available. Register soon to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold'>info@uhshacks.com</a> for more information.
@@ -365,6 +366,54 @@ const HomeClient = () => {
               link="https://www.linkedin.com/in/jeffmcconathy/"
               image="/people/jeffimg.jpg"
               title="VP of Product & Engineering at Sunday"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className='pt-36 bg-white sm:px-6 lg:px-8 px-4' id="theteam">
+
+        <div className='max-w-7xl mx-auto'>
+          <h2 className='text-center lg:text-5xl text-4xl font-black uppercase'>Meet the team</h2>
+          <hr className='mb-8 mt-1 border-2 border-black' />
+
+          {/* Option 1: Use items-start to align cards to top */}
+          <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 gap-y-12 gap-x-8 place-items-center items-start'>
+            <Person
+              name="Jacob Shaul"
+              bio="Hi! I'm Jacob, the lead organizer for UHS Hacks. I'm passionate about making technology accessible to all. You can contact me at: jacobbshaul@gmail.com with any questions!"
+              image="/people/jacobpic.png"
+              title="Lead Organizer"
+            />
+            <Person
+              name="Franchesqua Landicho"
+              bio="Hi! I'm Franchesqa, and I help with community outreach and content creation. When not designing our next post for UHS Hacks, I program small projects in Java, Python, and R."
+              image="/people/franchesqapic.jpg"
+              title="Social Media and Outreach"
+            />
+            <Person
+              name="Rowan Chandra "
+              bio="Hey, I&apos;m Rowan! I am super excited to volunteer at UHS hacks. Outside of school I like to bike and travel. You can contact me at: rowan.chandra_26@sfuhs.org"
+              image="/people/rowanpic.jpg"
+              title="Volunteer"
+            />
+            <Person
+              name="Rohan Swaminathan "
+              bio="I&apos;m Rohan, and I enjoy working on coding projects in my free time. I&apos;m excited to volunteer with UHS hacks this year! Feel free to reach out to me at: rohan.swaminthan_26@sfuhs.org"
+              image="/people/rohanpic.jpg"
+              title="Volunteer"
+            />
+            <Person
+              name="Naveen Gunawardana"
+              bio="Hi, I&apos;m Naveen and am excited to help out with UHS Hacks. I'm currently a software developer at Branded NIL and founder of locatemeals.com. I like to make AI related projects and play basketball."
+              image="/people/naveenpic.jpg"
+              title="Volunteer"
+            />
+            <Person
+              name="Ethan Printz"
+              bio="Hi, I&apos;m Ethan. I like all types of programming, including competitive programming, web, app, and game development, and math and physics visualizations."
+              image="/people/ethanpic.jpg"
+              title="Volunteer"
             />
           </div>
         </div>
