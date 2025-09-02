@@ -234,7 +234,7 @@ const HomeClient = () => {
               rounded-lg bg-white '>
               <h3 className='font-medium'>2:30 PM</h3>
               <div className='flex flex-col items-end text-right max-w-2xl w-full'>
-                <h3 className='font-medium pb-1'>Coding Competition</h3>
+                <h3 className='font-medium pb-1'>Tetris Tournament</h3>
                 <hr className='w-full border border-black' />
               </div>
             </div>
