@@ -386,7 +386,7 @@ const HomeClient = () => {
               title="Lead Organizer"
             />
             <Person
-              name="Franchesqua Landicho"
+              name="Franchesqa Landicho"
               bio="Hi! I'm Franchesqa, and I help with community outreach and content creation. When not designing our next post for UHS Hacks, I program small projects in Java, Python, and R."
               image="/people/franchesqapic.jpg"
               title="Social Media and Outreach"
