@@ -367,6 +367,13 @@ const HomeClient = () => {
               image="/people/jeffimg.jpg"
               title="VP of Product & Engineering at Sunday"
             />
+            <Judges
+              name="Byron Philhour"
+              bio1="Over the last two and a half decades, Byron has taught astronomy, physics, chemistry, computational modeling, math, and computer science to students of all ages and backgrounds. His day job is in independent school education, where he aligns with progressive / constructivist and humanist movements, understanding that human beings are capable of explosive, self-directed, experiential learning once obstacles to their well-being are removed." bio2="Byron earned his undergraduate degree from U.C. Berkeley and his Ph.D. in physics from the California Institute of Technology with a focus on observational cosmology. He's spent a lifetime tinkering with code, AI and data visualization." bio3="His company, Data Second, offers novel computational visualizations and models to clients at the intersection of data science and human relationships, including in education, politics, and in nonprofit and private sectors."
+              link="https://www.linkedin.com/in/bphilhour/"
+              image="/people/byronpic.png"
+              title="Independent School Educator and Data Scientist"
+            />
           </div>
         </div>
       </div>
