@@ -106,7 +106,7 @@ const HomeClient = () => {
                   </svg>
                 </div>
                 <h3 className="mt-4 text-3xl font-medium">University High School</h3>
-                <Link href="https://maps.app.goo.gl/R24RfjfDNtfwdVqJ8" target='_blank'><p className="mt-2 text-xl text-gray-700 hover:text-darkred">3065 Jackson Street | Directions here</p></Link>
+                <Link href="https://maps.app.goo.gl/XBRvN4v2F6Wezd7E7" target='_blank'><p className="mt-2 text-xl text-gray-700 hover:text-darkred">3150 California Street | Directions here</p></Link>
               </div>
 
               <div className="flex flex-col items-center">
