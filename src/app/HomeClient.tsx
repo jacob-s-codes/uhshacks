@@ -180,7 +180,7 @@ const HomeClient = () => {
                       <div className="ml-5">
                         <h3 className="text-lg font-medium text-gray-900">Win Prizes</h3>
                         <p className="mt-2 text-base text-gray-500">
-                          $15,000+ in prizes for top projects/teams + free swag
+                          $10,000+ in prizes for top projects/teams + free swag
                         </p>
                       </div>
                     </div>
