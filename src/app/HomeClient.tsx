@@ -290,7 +290,7 @@ const HomeClient = () => {
               <span className="block">Registration is now open!</span>
             </h2>
             <p className="my-8 text-xl leading-6 ">
-              Limited spots available. Register soon to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold'>info@uhshacks.com</a> for more information.
+              Limited spots available. Register soon to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold hover:underline'>info@uhshacks.com</a> for more information.
             </p>
             <Registerbtn />
           </div>
