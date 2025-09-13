@@ -417,9 +417,9 @@ const HomeClient = () => {
               title="Volunteer"
             />
             <Person
-              name="Ethan Printz"
-              bio="Hi, I&apos;m Ethan and excited to volunteer with UHS Hacks. I like all types of programming, including competitive programming, web, app, game development, and math and physics visualizations. "
-              image="/people/ethanpic.jpg"
+              name="Ella Shaul"
+              bio="Hi, I&apos;m Ella and excited to volunteer with UHS Hacks! I like to build websites, code in python, and am a volunteer with Mode to Code. You can reach me at: elmshaul@gmail.com"
+              image="/people/ellapic.jpg"
               title="Volunteer"
             />
           </div>
