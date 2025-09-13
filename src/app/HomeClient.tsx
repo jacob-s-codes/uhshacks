@@ -224,6 +224,14 @@ const HomeClient = () => {
             </div>
             <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
               rounded-lg bg-white '>
+              <h3 className='font-medium'>10:45 AM</h3>
+              <div className='flex flex-col items-end text-right max-w-2xl w-full'>
+                <h3 className='font-medium pb-1'>Intro to Web Development Workshop</h3>
+                <hr className='w-full border border-black' />
+              </div>
+            </div>
+            <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
+              rounded-lg bg-white '>
               <h3 className='font-medium'>12:00 PM</h3>
               <div className='flex flex-col items-end text-right max-w-2xl w-full'>
                 <h3 className='font-medium pb-1'>Lunch</h3>
