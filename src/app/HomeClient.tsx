@@ -54,7 +54,7 @@ const HomeClient = () => {
 
           <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl text-center"><span className='text-darkred' style={{ WebkitTextStroke: '4px black' }}>UHS </span><CryptoText text="HACKS 2025" /></h1>
           <h2 className="mt-6 max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white">
-            Join us for a day of coding, learning, and innovation at our school's premier hackathon event
+            Join us for a day of coding, learning, and innovation at our school's premier hackathon event - LIMITED SPOTS AVAILABLE
           </h2>
           <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
             <div className="relative inline-flex  group">
@@ -284,9 +284,9 @@ const HomeClient = () => {
 
       {/* CTA Section */}
       <div className="bg-darkred">
-        <div className="max-w-7xl flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+        <div className="max-w-[1450px] flex lg:flex-row gap-x-8 flex-col lg:text-left text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 ">
           <div className='pr-8 text-white' >
-            <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase" >
+            <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase lg:pr-4" >
               <span className="block">Ready to hack?</span>
               <span className="block">Registration is now open!</span>
             </h2>
@@ -295,7 +295,7 @@ const HomeClient = () => {
             </p>
             <Registerbtn />
           </div>
-          <img src="/uhsimg.png" alt="" className='max-w-2xl rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4' />
+          <img src="/swag.jpg" alt="" className='max-w-xl rotate-[-90deg] rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4 lg:mr-8' />
         </div>
       </div>
 
