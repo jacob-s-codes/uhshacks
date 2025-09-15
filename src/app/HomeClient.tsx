@@ -387,7 +387,7 @@ const HomeClient = () => {
               />
               <Judges
                 name="Megan Storti"
-                bio1="Megan Storti is the Director of Institutional Data and Strategy at San Francisco University High School. Megan has taught high school mathematics and computer science around the Bay Area, including at Convent & Stuart Hall." bio2="She has a Master's degree in Mathematics from San Francisco State University and a Master's degree in Educational Technology from Boise State University." bio3="" 
+                bio1="Megan Storti is the Director of Institutional Data and Strategy at San Francisco University High School. Megan has taught high school mathematics and computer science around the Bay Area with over a decade of experience." bio2="She has a Master's degree in Mathematics from San Francisco State University and a Master's degree in Educational Technology from Boise State University." bio3="" 
                 link="https://www.linkedin.com/in/meganstorti/"
                 image="/people/megan.png"
                 title="Director of Institutional Data at UHS"
