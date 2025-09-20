@@ -89,7 +89,7 @@ const AccordionDemo = () => {
     },
     {
       title: "What should I bring?",
-      content: "Bring your laptop, charger, and any other tech you need to work on your project. We also recommend bringing a water bottle and snacks to keep you energized throughout the event. We will also provide lunch, snacks, and drinks."
+      content: "Bring your laptop, charger, and any other tech you need to work on your project. We also recommend bringing a water bottle. We will also provide lunch, snacks, and drinks."
     }
 
   ];
