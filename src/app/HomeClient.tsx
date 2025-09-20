@@ -54,7 +54,7 @@ const HomeClient = () => {
 
           <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl text-center"><span className='text-darkred' style={{ WebkitTextStroke: '4px black' }}>UHS </span><CryptoText text="HACKS 2025" /></h1>
           <h2 className="mt-6 max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white">
-            Join us for a day of coding, learning, and innovation at our school's premier hackathon event
+            Join us for a day of coding, learning, and innovation at our school's premier hackathon event - LIMITED SPOTS AVAILABLE
           </h2>
           <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
             <div className="relative inline-flex  group">
@@ -224,13 +224,21 @@ const HomeClient = () => {
             </div>
             <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
               rounded-lg bg-white '>
+              <h3 className='font-medium'>10:45 AM</h3>
+              <div className='flex flex-col items-end text-right max-w-2xl w-full'>
+                <h3 className='font-medium pb-1'>Intro to Web Development Workshop</h3>
+                <hr className='w-full border border-black' />
+              </div>
+            </div>
+            <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
+              rounded-lg bg-white '>
               <h3 className='font-medium'>12:00 PM</h3>
               <div className='flex flex-col items-end text-right max-w-2xl w-full'>
                 <h3 className='font-medium pb-1'>Lunch</h3>
                 <hr className='w-full border border-black' />
               </div>
             </div>
-            
+
 
             <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
               rounded-lg bg-white '>
@@ -276,9 +284,9 @@ const HomeClient = () => {
 
       {/* CTA Section */}
       <div className="bg-darkred">
-        <div className="max-w-7xl flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+        <div className="max-w-[1450px] flex lg:flex-row gap-x-8 flex-col lg:text-left text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 ">
           <div className='pr-8 text-white' >
-            <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase" >
+            <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase lg:pr-4" >
               <span className="block">Ready to hack?</span>
               <span className="block">Registration is now open!</span>
             </h2>
@@ -287,7 +295,7 @@ const HomeClient = () => {
             </p>
             <Registerbtn />
           </div>
-          <img src="/uhsimg.png" alt="" className='max-w-2xl rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4' />
+          <img src="/swag.jpg" alt="" className='max-w-xl rotate-[-90deg] rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4 lg:mr-8' />
         </div>
       </div>
 
@@ -354,26 +362,30 @@ const HomeClient = () => {
               title="VP of Engineering at Chairish"
             />
             <Judges
-              name="Jeff McConathy"
-              bio1="Jeff McConathy is currently the VP of Product & Engineering at Sunday, a startup that's reinventing the lawn and garden space. Previously, he has led engineering teams at Niantic, Kasa Living and 6D.ai." bio2="Jeff was employee #4 at Trulia where he helped build and lead the engineering team through IPO and a multi-billion dollar acquisition. He has held leadership roles building software and engineering teams for 25+ years, building a strong expertise focused on startups and cutting edge innovation for both consumer and enterprise markets." bio3="He holds a Bachelor's degree from Penn State University and is based in San Francisco."
-              link="https://www.linkedin.com/in/jeffmcconathy/"
-              image="/people/jeffimg.jpg"
-              title="VP of Product & Engineering at Sunday"
-            />
-            <Judges
               name="Byron Philhour"
               bio1="Over the last two and a half decades, Byron has taught astronomy, physics, chemistry, computational modeling, math, and computer science to students of all ages and backgrounds. His day job is in independent school education, where he aligns with progressive / constructivist and humanist movements, understanding that human beings are capable of explosive, self-directed, experiential learning once obstacles to their well-being are removed." bio2="Byron earned his undergraduate degree from U.C. Berkeley and his Ph.D. in physics from the California Institute of Technology with a focus on observational cosmology. He's spent a lifetime tinkering with code, AI and data visualization." bio3="His company, Data Second, offers novel computational visualizations and models to clients at the intersection of data science and human relationships, including in education, politics, and in nonprofit and private sectors."
               link="https://www.linkedin.com/in/bphilhour/"
               image="/people/byronpic.png"
               title="Independent School Educator"
             />
-            <Judges
-              name="Ben Silbermann"
-              bio1="Ben Silbermann is the co-founder and former CEO of Pinterest, the virtual pinboard used by over 400 million people worldwide." bio2="Graduating from Yale with a degree in political science, Mr. Silbermann started his career at Google before launching Pinterest in 2010, turning a childhood passion into one of the most influential tech companies of the past decade. Mr. Silbermann has been praised for his product vision and emphasis on design, particularly user experience; he helped shape how people discover and share inspiration online." bio3="After stepping down as CEO in 2022, Mr. Silbermann has focused on new ventures and philanthropy. Currently, he serves as chair of the board of directors of Pinterest and is based in San Francisco."
-              link="https://www.linkedin.com/in/silbermann/"
-              image="/people/bensilbermann.png"
-              title="Former CEO of Pinterest"
-            />
+            
+
+
+              <Judges
+                name="Ben Silbermann"
+                bio1="Ben Silbermann is the co-founder and former CEO of Pinterest, the virtual pinboard used by over 400 million people worldwide." bio2="Graduating from Yale with a degree in political science, Mr. Silbermann started his career at Google before launching Pinterest in 2010, turning a childhood passion into one of the most influential tech companies of the past decade. Mr. Silbermann has been praised for his product vision and emphasis on design, particularly user experience; he helped shape how people discover and share inspiration online." bio3="After stepping down as CEO in 2022, Mr. Silbermann has focused on new ventures and philanthropy. Currently, he serves as chair of the board of directors of Pinterest and is based in San Francisco."
+                link="https://www.linkedin.com/in/silbermann/"
+                image="/people/bensilbermann.png"
+                title="Former CEO of Pinterest"
+              />
+              <Judges
+                name="Megan Storti"
+                bio1="Megan Storti is the Director of Institutional Data and Strategy at San Francisco University High School. Megan has taught high school mathematics and computer science around the Bay Area with over a decade of experience." bio2="She has a Master's degree in Mathematics from San Francisco State University and a Master's degree in Educational Technology from Boise State University." bio3="" 
+                link="https://www.linkedin.com/in/meganstorti/"
+                image="/people/megan.png"
+                title="Director of Institutional Data at UHS"
+              />
+           
           </div>
         </div>
       </div>
