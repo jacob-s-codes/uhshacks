@@ -85,7 +85,7 @@ const HomeClient = () => {
       {/* Date and Location Section */}
       <div className="bg-gradient-to-b from-white to-red-200">
         <div id="about">
-          <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[1600px] mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <h2 className='text-center pt-36  lg:text-5xl text-4xl font-black pb-2'>UHS HACKS 2025</h2>
             <hr className='mb-12 border-2 border-black' />
             <Carosel />
