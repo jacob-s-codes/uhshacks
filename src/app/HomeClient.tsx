@@ -50,37 +50,37 @@ const HomeClient = () => {
 
 
       </div> */}
-      <div className="homebg h-screen">
-        <div className="h-full flex flex-col items-center justify-center px-4">
+      <div className="homebg h-screen relative">
+        {/* Background video */}
+        <video
+          src="/2025/bgmp4.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        ></video>
 
-          <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl text-center"><span className='text-darkred' style={{ WebkitTextStroke: '4px black' }}>UHS </span><CryptoText text="HACKS 2025" /></h1>
+        {/* Overlay for dark effect (optional) */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10"></div>
+
+        {/* Content */}
+        <div className="relative h-full flex flex-col items-center justify-center px-4 z-20">
+          <h1 className="font-black tracking-tight text-white text-7xl lg:text-9xl text-center">
+            <span
+              className="text-darkred"
+              style={{ WebkitTextStroke: "4px black" }}
+            >
+              UHS{" "}
+            </span>
+            <CryptoText text="HACKS 2025" />
+          </h1>
           <h2 className="mt-6 max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white">
             Thank you to everyone that came to UHS Hacks 2025! The event is now over
           </h2>
-          {/* <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
-            <div className="relative inline-flex  group">
-              <div
-                className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
-              </div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSelDOdh_z7yWL_Vlil8nzMSyHEThYtlpgQZxdf9MAtcBmXEYg/viewform?usp=header" title="Sign up" target='_blank'
-                className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl "
-                role="button">Sign Up Now
-              </a>
-            </div>
-
-
-            <div className="relative inline-flex  group">
-              <div
-                className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
-              </div>
-              <a href="https://discord.gg/Kz3RqUbEbt" title="Join the discord" target='_blank'
-                className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-gray-900"
-                role="button">Join The Discord
-              </a>
-            </div>
-          </div> */}
         </div>
       </div>
+
 
       {/* Date and Location Section */}
       <div className="bg-gradient-to-b from-white to-red-200">
@@ -88,11 +88,11 @@ const HomeClient = () => {
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <h2 className='text-center pt-36  lg:text-5xl text-4xl font-black pb-2'>UHS HACKS 2025</h2>
             <hr className='mb-12 border-2 border-black' />
-            <Carosel/>
+            <Carosel />
           </div>
         </div>
 
-        
+
 
         {/* Schedule */}
         <div className='py-36 max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8' id="schedule">
@@ -271,24 +271,24 @@ const HomeClient = () => {
               image="/people/byronpic.png"
               title="Independent School Educator"
             />
-            
 
 
-              <Judges
-                name="Ben Silbermann"
-                bio1="Ben Silbermann is the co-founder and former CEO of Pinterest, the virtual pinboard used by over 400 million people worldwide." bio2="Graduating from Yale with a degree in political science, Mr. Silbermann started his career at Google before launching Pinterest in 2010, turning a childhood passion into one of the most influential tech companies of the past decade. Mr. Silbermann has been praised for his product vision and emphasis on design, particularly user experience; he helped shape how people discover and share inspiration online." bio3="After stepping down as CEO in 2022, Mr. Silbermann has focused on new ventures and philanthropy. Currently, he serves as chair of the board of directors of Pinterest and is based in San Francisco."
-                link="https://www.linkedin.com/in/silbermann/"
-                image="/people/bensilbermann.png"
-                title="Former CEO of Pinterest"
-              />
-              <Judges
-                name="Megan Storti"
-                bio1="Megan Storti is the Director of Institutional Data and Strategy at San Francisco University High School. Megan has taught high school mathematics and computer science around the Bay Area with over a decade of experience." bio2="She has a Master's degree in Mathematics from San Francisco State University and a Master's degree in Educational Technology from Boise State University." bio3="" 
-                link="https://www.linkedin.com/in/meganstorti/"
-                image="/people/megan.png"
-                title="Director of Institutional Data at UHS"
-              />
-           
+
+            <Judges
+              name="Ben Silbermann"
+              bio1="Ben Silbermann is the co-founder and former CEO of Pinterest, the virtual pinboard used by over 400 million people worldwide." bio2="Graduating from Yale with a degree in political science, Mr. Silbermann started his career at Google before launching Pinterest in 2010, turning a childhood passion into one of the most influential tech companies of the past decade. Mr. Silbermann has been praised for his product vision and emphasis on design, particularly user experience; he helped shape how people discover and share inspiration online." bio3="After stepping down as CEO in 2022, Mr. Silbermann has focused on new ventures and philanthropy. Currently, he serves as chair of the board of directors of Pinterest and is based in San Francisco."
+              link="https://www.linkedin.com/in/silbermann/"
+              image="/people/bensilbermann.png"
+              title="Former CEO of Pinterest"
+            />
+            <Judges
+              name="Megan Storti"
+              bio1="Megan Storti is the Director of Institutional Data and Strategy at San Francisco University High School. Megan has taught high school mathematics and computer science around the Bay Area with over a decade of experience." bio2="She has a Master's degree in Mathematics from San Francisco State University and a Master's degree in Educational Technology from Boise State University." bio3=""
+              link="https://www.linkedin.com/in/meganstorti/"
+              image="/people/megan.png"
+              title="Director of Institutional Data at UHS"
+            />
+
           </div>
         </div>
       </div>
