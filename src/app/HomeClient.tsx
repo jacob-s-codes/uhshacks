@@ -54,9 +54,9 @@ const HomeClient = () => {
 
           <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl text-center"><span className='text-darkred' style={{ WebkitTextStroke: '4px black' }}>UHS </span><CryptoText text="HACKS 2025" /></h1>
           <h2 className="mt-6 max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white">
-            Join us for a day of coding, learning, and innovation at our school's premier hackathon event - LIMITED SPOTS AVAILABLE
+            Thank you to everyone that came to UHS Hacks 2025! The event is now over
           </h2>
-          <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
+          {/* <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
             <div className="relative inline-flex  group">
               <div
                 className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
@@ -77,7 +77,7 @@ const HomeClient = () => {
                 role="button">Join The Discord
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

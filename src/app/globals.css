@@ -44,11 +44,11 @@
 
 
 .homebg {
-  background-image: url("/uhsimg.jpg");
+  background-image: url("/2025/fullimage.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: rgb(132, 131, 131);
+  background-color: rgb(110, 109, 109);
   background-blend-mode: multiply;
   height: 100vh;
   width: 100vw;

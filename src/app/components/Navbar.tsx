@@ -46,7 +46,7 @@ const Navbar = () => {
                             e.preventDefault();
                             document.querySelector('#FAQ')?.scrollIntoView({behavior:'smooth'});
                         }} className="hover:text-black hover:bg-red-200 rounded-lg px-3 py-2 font-medium transition-colors duration-300">FAQ</Link>
-                        <Registerbtn/>
+                        {/* <Registerbtn/> */}
                     </div>
 
                     {/* Mobile menu button with animation */}
@@ -103,7 +103,7 @@ const Navbar = () => {
                         document.querySelector('#FAQ')?.scrollIntoView({behavior:'smooth'});
                         setIsMenuOpen(false);
                     }} className="block text-white hover:text-black hover:bg-white px-3 py-2 font-medium transition-colors duration-300">FAQ</Link>
-                    <Registerbtn/>
+                    {/* <Registerbtn/> */}
                 </div>
             </div>
         </nav>
