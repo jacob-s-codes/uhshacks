@@ -13,6 +13,7 @@ const Carosel = () => {
             <img src="/2025/workingpic2.jpg" alt="wide image" className='lg:h-[500px] md:h-96 h-72 flex lg:mx-4 mx-2'/>
             <img src="/2025/workingpic3.jpg" alt="wide image" className='lg:h-[500px] md:h-96 h-72 flex lg:mx-4 mx-2'/>
             <img src="/2025/workingpic4.jpg" alt="wide image" className='lg:h-[500px] md:h-96 h-72 flex lg:mx-4 mx-2'/>
+            <img src="/2025/workingpic5.jpg" alt="wide image" className='lg:h-[500px] md:h-96 h-72 flex lg:mx-4 mx-2'/>
             {/* <img src="/2025/wideimg2.jpg" alt="wide image" className='lg:w-[500px] md:w-32 w-28 flex lg:mx-10 mx-6'/> */}
           </Marquee>
     </div>
