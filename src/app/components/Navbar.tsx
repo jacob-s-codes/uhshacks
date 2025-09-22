@@ -10,7 +10,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     
     return (
-        <nav className={`bg-darkred shadow-lg text-white sticky top-0 z-50 transition-colors duration-300`} id="navbar">
+        <nav className={`bg-darkred shadow-lg text-white py-2 sticky top-0 z-[100] transition-colors duration-300`} id="navbar">
             <div className="max-w-[1450px] mx-auto px-4 ">
                 <div className="flex justify-between h-16">
                     <div className="flex items-center">

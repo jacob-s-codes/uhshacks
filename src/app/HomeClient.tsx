@@ -9,48 +9,10 @@ import Carosel from './components/Carosel'
 
 const HomeClient = () => {
   return (
-    <div className=" bg-gray-50">
+    <div className=" bg-gray-50 w-full overflow-x-hidden overflow-y-hidden">
 
 
-
-
-      {/* Hero Section */}
-      {/* <div className="homebg  h-screen  ">
-        <div className='flex items-center justify-center'>
-          <div className="relative max-w-7xl w-full text-center flex flex-col items-center justify-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-            <h1 className=" font-black tracking-tight text-white text-7xl lg:text-9xl"><span className='text-darkred'>UHS </span><CryptoText text="Hacks 2025" /></h1>
-            <p className="mt-6 max-w-xl font-semibold lg:text-3xl text-2xl text-white">
-              Join us for a day of coding, learning, and innovation at our school's premier hackathon event
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row sm:items-start items-center gap-4">
-              <div className="relative inline-flex  group">
-                <div
-                  className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
-                </div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSelDOdh_z7yWL_Vlil8nzMSyHEThYtlpgQZxdf9MAtcBmXEYg/viewform?usp=header" title="Sign up" target='_blank'
-                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl "
-                  role="button">Sign Up Now
-                </a>
-              </div>
-
-
-              <div className="relative inline-flex  group">
-                <div
-                  className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-darkred via-red-400 to-red-800 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
-                </div>
-                <a href="https://discord.gg/69DBGBKeGz" title="Join the discord" target='_blank'
-                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-gray-900"
-                  role="button">Join The Discord
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div> 
-
-
-      </div> */}
-      <div className="homebg h-screen relative">
+      <div className="homebg h-screen relative w-full bg-cover overflow-hidden isolate">
         {/* Background video */}
         <video
           src="/2025/bgmp4.mp4"
@@ -58,15 +20,15 @@ const HomeClient = () => {
           muted
           loop
           playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        ></video>
+          className="absolute inset-0 w-full h-full object-cover -z-10"
+        />
 
-        {/* Overlay for dark effect (optional) */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10"></div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60 -z-0"></div>
 
         {/* Content */}
-        <div className="relative h-full flex flex-col items-center justify-center px-4 z-20">
-          <h1 className="font-black tracking-tight text-white text-7xl lg:text-9xl text-center">
+        <div className="relative h-full flex flex-col items-center justify-center px-4 z-10">
+          <h1 className="font-black tracking-tight text-white text-7xl lg:text-9xl text-center ">
             <span
               className="text-darkred"
               style={{ WebkitTextStroke: "4px black" }}
@@ -75,11 +37,12 @@ const HomeClient = () => {
             </span>
             <CryptoText text="HACKS 2025" />
           </h1>
-          <h2 className="mt-6 max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white">
+          <h2 className="max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white my-8">
             Thank you to everyone that came to UHS Hacks 2025! The event is now over
           </h2>
         </div>
       </div>
+
 
 
       {/* Date and Location Section */}

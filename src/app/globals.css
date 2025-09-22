@@ -43,7 +43,7 @@
 }
 
 
-.homebg {
+/* .homebg {
   background-image: url("/2025/fullimage.jpg");
   background-size: cover;
   background-position: center center;
@@ -52,7 +52,7 @@
   background-blend-mode: multiply;
   height: 100vh;
   width: 100vw;
-}
+} */
 
 html,
 body {
