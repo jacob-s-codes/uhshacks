@@ -154,7 +154,7 @@ const HomeClient = () => {
           <div className='pr-8 text-white' >
             <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase lg:pr-4" >
               <span className="block">Ready to hack?</span>
-              <span className="block">Registration is now open!</span>
+              <span className="block">Check back in next year!</span>
             </h2>
             <p className="my-8 text-xl leading-6 ">
               Limited spots available. Register soon to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold hover:underline'>info@uhshacks.com</a> for more information.
