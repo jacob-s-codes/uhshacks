@@ -8,6 +8,9 @@ import Person from './components/Person'
 import Carosel from './components/Carosel'
 
 const HomeClient = () => {
+  const time = new Date();
+  const year = time.getFullYear();
+
   return (
     <div className=" bg-gray-50 w-full overflow-x-hidden overflow-y-hidden">
 
@@ -342,7 +345,7 @@ const HomeClient = () => {
           </div>
           <div className='flex flex-row items-center justify-center gap-x-10 mt-8'>
             <p className=" text-base ">
-              &copy; 2025 UHS Hacks. All rights reserved.
+              &copy; {year} UHS Hacks. All rights reserved.
             </p>
             <p>Website built by <Link href="https://github.com/jacob-s-codes" target="_blank" className="hover:cursor-pointer hover:text-black">Jacob S</Link></p>
             <p className=' text-center'>Questions? Email: <a href="mailto:info@uhshacks.com" className='font-bold hover:underline'>info@uhshacks.com</a></p>
