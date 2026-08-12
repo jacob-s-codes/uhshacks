@@ -41,7 +41,7 @@ const HomeClient = () => {
             <CryptoText text="HACKS 2027" />
           </h1>
           <h2 className="max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white my-8">
-            Thanks to everyone for coming to UHS Hacks 2025! The event is now over.
+            MANY VOICES, ONE UNIVERSITY {"{HACKATHON}"}
           </h2>
         </div>
       </div>
