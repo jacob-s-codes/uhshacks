@@ -225,15 +225,13 @@ const HomeClient = () => {
           <div className='grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 gap-y-12 gap-x-8 place-items-center items-start'>
             <Judges
               name="Come back soon!"
-              bio1="Andy Denmark is a seasoned technology executive and co-founder of Chairish, a curated online marketplace for pre-owned, high-end home furnishings. Since helping launch the company in February 2013, he has served as its CTO, driving innovation and overseeing the platform's technical development, security, and server operations. Chairish was acquired by Auction Technology Group in 2025." bio2="With over two decades of industry experience, Andy previously co-founded TripIt (acquired by Concur Technologies in 2011), a first of its kind online travel itinerary organizer, and held senior engineering roles at SAP/Concur and Opsware/Loudcloud." bio3="He holds both a Masters in Computer Science and a Bachelors in Electrical Engineering from the Columbia University School of Engineering and Applied Science. He is based in the San Francisco Bay Area."
-              link="https://www.linkedin.com/in/andydenmark/"
+              link=""
               image="/people/andypic2.jpg"
               title=""
             />
             <Judges
               name="Come back soon!"
-              bio1="Over the last two and a half decades, Byron has taught astronomy, physics, chemistry, computational modeling, math, and computer science to students of all ages and backgrounds. His day job is in independent school education, where he aligns with progressive / constructivist and humanist movements, understanding that human beings are capable of explosive, self-directed, experiential learning once obstacles to their well-being are removed." bio2="Byron earned his undergraduate degree from U.C. Berkeley and his Ph.D. in physics from the California Institute of Technology with a focus on observational cosmology. He's spent a lifetime tinkering with code, AI and data visualization." bio3="His company, Data Second, offers novel computational visualizations and models to clients at the intersection of data science and human relationships, including in education, politics, and in nonprofit and private sectors."
-              link="https://www.linkedin.com/in/bphilhour/"
+              link=""
               image="/people/byronpic.png"
               title=""
             />
@@ -242,15 +240,13 @@ const HomeClient = () => {
 
             <Judges
               name="Come back soon!"
-              bio1="Graduating from Yale with a degree in political science, Mr. Silbermann started his career at Google before launching Pinterest in 2010, turning a childhood passion into one of the most influential tech companies of the past decade. Mr. Silbermann has been praised for his product vision and emphasis on design, particularly user experience; he helped shape how people discover and share inspiration online." bio3="After stepping down as CEO in 2022, Mr. Silbermann has focused on new ventures and philanthropy. Currently, he serves as chair of the board of directors of Pinterest and is based in San Francisco."
-              link="https://www.linkedin.com/in/silbermann/"
+              link=""
               image="/people/bensilbermann.png"
               title=""
             />
             <Judges
               name="Come back soon!"
-              bio1="Megan Storti is the Director of Institutional Data and Strategy at San Francisco University High School. Megan has taught high school mathematics and computer science around the Bay Area with over a decade of experience." bio2="She has a Master's degree in Mathematics from San Francisco State University and a Master's degree in Educational Technology from Boise State University." bio3=""
-              link="https://www.linkedin.com/in/meganstorti/"
+              link=""
               image="/people/megan.png"
               title=""
             />
