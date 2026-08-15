@@ -3,15 +3,15 @@ import React, { useState } from "react";
 
 interface JudgesProps {
     image: string;
-    bio1: string;
-    bio2: string;
-    bio3: string;
+    // bio1: string;
+    // bio2: string;
+    // bio3: string;
     link: string;
     name: string;
     title?: string; // optional role/title
 }
 
-const Judges = ({ image, bio1, bio2, bio3, link, name, title }: JudgesProps) => {
+const Judges = ({ image, link, name, title }: JudgesProps) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     return (
@@ -27,22 +27,19 @@ const Judges = ({ image, bio1, bio2, bio3, link, name, title }: JudgesProps) => 
                     <h2 className="text-xl font-semibold text-gray-900">{name}</h2>
                     {title && <p className="text-sm text-gray-500">{title}</p>}
                 </div>
-                <div className={`text-gray-700 text-sm leading-relaxed transition-all duration-300 ${isExpanded ? "" : "line-clamp-3"
+                {/* <div className={`text-gray-700 text-sm leading-relaxed transition-all duration-300 ${isExpanded ? "" : "line-clamp-3"
                     }`}>
-                    {/* Bio */}
-                    <p
-                    >
+                    {/* Bio *
+                    <p>
                         {bio1}
                     </p>
-                    <p className="pt-3"
-                    >
+                    <p className="pt-3">
                         {bio2}
                     </p>
-                    <p className="pt-3"
-                    >
+                    <p className="pt-3">
                         {bio3}
                     </p>
-                </div>
+                </div> */}
 
                 {/* Read More / Read Less toggle */}
                 <button
