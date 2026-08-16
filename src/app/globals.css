@@ -142,3 +142,25 @@ body {
     @apply bg-background text-foreground;
   }
 }
+@keyframes hacksColor {
+  0%,
+  100% {
+    color: white;
+  }
+
+  25% {
+    color: #991b1b;
+  }
+
+  50% {
+    color: white;
+  }
+
+  75% {
+    color: #991b1b;
+  }
+}
+
+.group:hover .hacks-hover {
+  animation: hacksColor 3s infinite ease-in-out;
+}
