@@ -67,6 +67,51 @@ const HomeClient = () => {
 
 
 
+
+
+
+      {/* CTA Section */}
+      <div className="bg-darkred">
+        <div className="max-w-[1450px] flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-12 sm:py-20 px-5 sm:px-6">
+
+          <div className='text-white lg:pr-8 w-full'>
+            <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase lg:pr-4">
+              <span className="block">Ready to hack?</span>
+              <span className="block">Check back in soon!</span>
+            </h2>
+            <p className="my-8 text-xl leading-6 ">
+              Limited spots available. Register soon to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold hover:underline'>info@uhshacks.com</a> for more information.
+            </p>
+            <Registerbtn />
+          </div>
+          <img src="/swag.jpg" alt="" className='max-w-xl rotate-[-90deg] rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4 lg:mr-8' />
+        </div>
+      </div>
+
+      {/* <div className="pt-36 sm:px-6 lg:px-8 px-4" id="theteam">
+        <div className="max-w-7xl mx-auto">
+          <h2 className='text-center lg:text-5xl text-4xl font-black'>OUR TEAM</h2>
+          <hr className='mb-8 mt-1 border-2 border-black' />
+
+          <div className="grid grid-cols-4 gap-2 text-white">
+            <div className="flex flex-col items-start bg-darkred p-4 rounded-lg gap-y-2 border-black border-4">
+              <img src="/people/jacobpic.png" alt="" className="rounded-lg h-72 w-auto border-2 border-white"/>
+              <h3 className="text-2xl font-bold">&#123; Jacob Shaul &#125;</h3>
+              <h4 className="text-xl font-bold">Lead Organizer</h4>
+              <p className="text-lg font-medium">Looking forward to bringing opportunities to high school students in the Bay Area!</p>
+            </div>
+
+            <div className="flex flex-col items-start bg-darkred p-4 rounded-lg gap-y-2 border-black border-4">
+              <img src="/people/rowanpic.png" alt="" className="rounded-lg h-72 border-2 border-white"/>
+              <h3 className="text-2xl font-bold">&#123; Jacob Shaul &#125;</h3>
+              <h4 className="text-xl font-bold">Lead Organizer</h4>
+              <p className="text-lg font-medium">Looking forward to bringing opportunities to high school students in the Bay Area!</p>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+
         {/* Schedule */}
         <div className='py-36 max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8' id="schedule">
           <h2 className='lg:text-5xl text-4xl font-black uppercase text-center pb-2 '>Schedule</h2>
@@ -155,49 +200,6 @@ const HomeClient = () => {
           </div>
         </div>
       </div>
-
-
-
-      {/* CTA Section */}
-      <div className="bg-darkred">
-        <div className="max-w-[1450px] flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-12 sm:py-20 px-5 sm:px-6">
-
-          <div className='text-white lg:pr-8 w-full'>
-            <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase lg:pr-4">
-              <span className="block">Ready to hack?</span>
-              <span className="block">Check back in soon!</span>
-            </h2>
-            <p className="my-8 text-xl leading-6 ">
-              Limited spots available. Register soon to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold hover:underline'>info@uhshacks.com</a> for more information.
-            </p>
-            <Registerbtn />
-          </div>
-          <img src="/swag.jpg" alt="" className='max-w-xl rotate-[-90deg] rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4 lg:mr-8' />
-        </div>
-      </div>
-
-      {/* <div className="pt-36 sm:px-6 lg:px-8 px-4" id="theteam">
-        <div className="max-w-7xl mx-auto">
-          <h2 className='text-center lg:text-5xl text-4xl font-black'>OUR TEAM</h2>
-          <hr className='mb-8 mt-1 border-2 border-black' />
-
-          <div className="grid grid-cols-4 gap-2 text-white">
-            <div className="flex flex-col items-start bg-darkred p-4 rounded-lg gap-y-2 border-black border-4">
-              <img src="/people/jacobpic.png" alt="" className="rounded-lg h-72 w-auto border-2 border-white"/>
-              <h3 className="text-2xl font-bold">&#123; Jacob Shaul &#125;</h3>
-              <h4 className="text-xl font-bold">Lead Organizer</h4>
-              <p className="text-lg font-medium">Looking forward to bringing opportunities to high school students in the Bay Area!</p>
-            </div>
-
-            <div className="flex flex-col items-start bg-darkred p-4 rounded-lg gap-y-2 border-black border-4">
-              <img src="/people/rowanpic.png" alt="" className="rounded-lg h-72 border-2 border-white"/>
-              <h3 className="text-2xl font-bold">&#123; Jacob Shaul &#125;</h3>
-              <h4 className="text-xl font-bold">Lead Organizer</h4>
-              <p className="text-lg font-medium">Looking forward to bringing opportunities to high school students in the Bay Area!</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
 
       <div className='pt-36 bg-white sm:px-6 lg:px-8 px-4' id="sponsors">
