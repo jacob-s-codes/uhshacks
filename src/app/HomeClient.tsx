@@ -33,15 +33,22 @@ const HomeClient = () => {
         <div className="relative h-full flex flex-col items-center justify-center px-4 z-10">
           <h1 className="font-black tracking-tight text-white text-7xl lg:text-9xl text-center ">
             <span
-              className="text-darkred"
-              style={{ WebkitTextStroke: "4px black" }}
+              className="text-red-600"
+            
             >
               UHS{" "}
             </span>
             <CryptoText text="HACKS 2027" />
           </h1>
           <h2 className="max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white my-8">
-            MANY VOICES, ONE UNIVERSITY {"{HACKATHON}"}
+            MANY VOICES, ONE UNIVERSITY 
+            
+             <span
+              className="text-red-600"
+            
+            >
+              {"{HACKATHON} "}
+            </span>
           </h2>
         </div>
       </div>
@@ -52,7 +59,7 @@ const HomeClient = () => {
       <div className="bg-gradient-to-b from-white to-red-200">
         <div id="about">
           <div className="max-w-[1600px] mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <h2 className='text-center pt-36  lg:text-5xl text-4xl font-black pb-2'>UHS HACKS 2025</h2>
+            <h2 className='text-center pt-36  lg:text-5xl text-4xl font-black pb-2'>Past Events</h2>
             <hr className='mb-12 border-2 border-black' />
             <Carosel />
           </div>
@@ -272,7 +279,7 @@ const HomeClient = () => {
 
             <Person
               name="Aishwarya Jha"
-              bio="Hi, I'm Aishi, and I'm excited to support UHS Hacks this year. I like to code and build websites, play volleyball, and hang out with family and friends. You can reach me at: aishwaryapjha@gmail.com"
+              bio="Hi, I'm Aishi, and I'm delighted to support UHS Hacks this year. I like to code and build websites, play volleyball, and hang out with family and friends. You can reach me at: aishwaryapjha@gmail.com"
               image="/people/aishi.png"
               title="Volunteer"
             />
@@ -311,7 +318,7 @@ const HomeClient = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-darkred">
+      <footer className="bg-red-800">
         <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8 text-white">
           <div className="mt-8 flex justify-center space-x-6">
 
