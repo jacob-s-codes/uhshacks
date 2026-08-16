@@ -18,7 +18,7 @@ const Judges = ({ image, link, name, title }: JudgesProps) => {
         <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white border border-black hover:shadow-xl transition-shadow duration-300">
             {/* Judge Placeholder */}
             <div className="w-full h-72 flex items-center justify-center bg-gray-200">
-                <span className="text-9xl font-black text-darkred">?</span>
+                <span className="text-9xl font-black text-red-700">?</span>
             </div>
             {/* Content */}
             <div className="p-5 flex flex-col space-y-3 border-t border-black">
