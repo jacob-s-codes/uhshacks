@@ -36,17 +36,21 @@ const HomeClient = () => {
               {"UHS"}
             </span>
 
-            <span className="ml-7 relative group inline-block">
-              <span className="font-extralight absolute right-full -top-2.5 -mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            <span className="ml-8 relative group inline-block">
+              <span className="absolute right-full -top-2.5 -mr-2 font-extralight opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                 {"{"}
               </span>
 
-              <CryptoText text="HACKS" />
+              <span className="hacks-hover">
+                <CryptoText text="HACKS" />
+              </span>
 
-              <span className="font-extralight absolute left-full -top-2.5 -ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <span className="absolute left-full -top-2.5 -ml-2 font-extralight opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                 {"}"}
               </span>
+
             </span>
+
           </h1>
           <h2
             className="pt-3.5 font-black tracking-tight text-white text-7xl lg:text-8xl text-center ">
@@ -96,7 +100,9 @@ const HomeClient = () => {
               </p>
               <Registerbtn />
             </div>
-            <img src="/swag.jpg" alt="" className='max-w-xl rotate-[-90deg] rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4 lg:mr-8' />
+            <div className="transition-transform duration-300 hover:scale-110 mr-16">
+            <img src="/swag.jpg" alt="" className=' max-w-lg rotate-[-90deg] rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4 lg:mr-8' />
+            </div>
           </div>
         </div>
 
@@ -366,7 +372,7 @@ const HomeClient = () => {
           </div>
         </div>
       </footer>
-    </div>
+    </div >
   )
 }
 
