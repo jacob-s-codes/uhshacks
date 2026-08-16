@@ -33,7 +33,7 @@ const HomeClient = () => {
         <div className="relative h-full flex flex-col items-center justify-center px-4 z-10">
           <h1 className="font-black tracking-tight text-white text-7xl lg:text-9xl text-center ">
             <span
-              className="text-red-600"
+              className="text-red-700"
 
             >
               UHS{" "}
@@ -44,7 +44,7 @@ const HomeClient = () => {
             MANY VOICES, ONE UNIVERSITY
 
             <span
-              className="text-red-600"
+              className="text-red-700"
 
             >
               {"{HACKATHON} "}
@@ -71,7 +71,7 @@ const HomeClient = () => {
 
 
       {/* CTA Section */}
-      <div className="bg-darkred">
+      <div className="bg-red-800">
         <div className="max-w-[1450px] flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-12 sm:py-20 px-5 sm:px-6">
 
           <div className='text-white lg:pr-8 w-full'>
