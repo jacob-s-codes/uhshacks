@@ -34,18 +34,18 @@ const HomeClient = () => {
           <h1 className="font-black tracking-tight text-white text-7xl lg:text-9xl text-center ">
             <span
               className="text-red-600"
-            
+
             >
               UHS{" "}
             </span>
             <CryptoText text="HACKS 2027" />
           </h1>
           <h2 className="max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white my-8">
-            MANY VOICES, ONE UNIVERSITY 
-            
-             <span
+            MANY VOICES, ONE UNIVERSITY
+
+            <span
               className="text-red-600"
-            
+
             >
               {"{HACKATHON} "}
             </span>
@@ -160,9 +160,10 @@ const HomeClient = () => {
 
       {/* CTA Section */}
       <div className="bg-darkred">
-        <div className="max-w-[1450px] flex lg:flex-row gap-x-8 flex-col lg:text-left text-center items-center justify-between mx-auto py-16 px-4 sm:py-20 sm:px-6 ">
-          <div className='pr-8 text-white' >
-            <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase lg:pr-4" >
+        <div className="max-w-[1450px] flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-12 sm:py-20 px-5 sm:px-6">
+
+          <div className='text-white lg:pr-8 w-full'>
+            <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase lg:pr-4">
               <span className="block">Ready to hack?</span>
               <span className="block">Check back in soon!</span>
             </h2>
