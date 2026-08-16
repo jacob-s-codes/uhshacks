@@ -275,7 +275,7 @@ const HomeClient = () => {
           <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 gap-y-12 gap-x-8 place-items-center items-start'>
             <Person
               name="Ella Shaul"
-              bio="Hi, I'm Ella! I'm super excited to lead UHS Hacks 2027! I like to hang out with friends, listen to music, and anything STEM related. You can reach me at: elmshaul@gmail.com"
+              bio="Hi, I'm Ella and I'm super excited to lead UHS Hacks 2027! In my free time I like to hang out with friends, listen to music, and anything STEM related. You can reach me at: elmshaul@gmail.com"
               image="/people/ellapic.png"
               title="Lead Organizer"
             />
