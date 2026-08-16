@@ -288,7 +288,7 @@ const HomeClient = () => {
             />
             <Person
               name="Surina Chandra"
-              bio="Hi, I’m Surina, and I’m excited to help out with UHS Hacks this year. I love 3D modeling, spending time with friends, and anything in the science department excites me! You can reach me at: "
+              bio="Hi, I’m Surina, and I’m excited to help out with UHS Hacks this year. I love 3D modeling, spending time with friends, and anything in the science department! You can reach me at: "
               image="/people/surina.png"
               title="Volunteer"
             />
