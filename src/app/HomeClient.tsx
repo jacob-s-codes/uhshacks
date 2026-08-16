@@ -33,7 +33,7 @@ const HomeClient = () => {
         <div className="relative h-full flex flex-col items-center justify-center px-4 z-10">
           <h1 className="font-black tracking-tight text-white text-7xl lg:text-9xl text-center ">
             <span
-              className="text-red-700"
+              className="text-red-800"
 
             >
               {"UHS"}
@@ -44,14 +44,14 @@ const HomeClient = () => {
             className="pt-3.5 font-black tracking-tight text-white text-7xl lg:text-8xl text-center ">
                <CryptoText text="2027" />
             </h2> 
-          <h3 className="max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white my-8">
-            MANY VOICES, ONE UNIVERSITY
+          <h3 className="max-w-3xl text-center font-semibold lg:text-3xl text-2xl text-white my-8">
+            MANY VOICES, ONE UHS
 
             <span
-              className="text-red-700"
+              className="text-red-800"
 
             >
-              {"{HACKATHON} "}
+              {" {HACKS} "}
             </span>
           </h3>
         </div>
@@ -279,32 +279,32 @@ const HomeClient = () => {
           <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 gap-y-12 gap-x-8 place-items-center items-start'>
             <Person
               name="Ella Shaul"
-              bio="Hi, I'm Ella and I'm super excited to lead UHS Hacks 2027! In my free time I like to hang out with friends, listen to music, and anything STEM related. You can reach me at: elmshaul@gmail.com"
-              image="/people/ellapic.png"
+              bio="Hi, I'm Ella and I'm super excited to lead UHS Hacks 2027! In my free time I like to hang out with friends, listen to music, and anything STEM related."
+              image="/people/ella.png"
               title="Lead Organizer"
             />
 
             <Person
               name="Aishwarya Jha"
-              bio="Hi, I'm Aishi, and I'm delighted to support UHS Hacks this year. I like to code and build websites, play volleyball, and hang out with family and friends. You can reach me at: aishwaryapjha@gmail.com"
+              bio="Hi, I'm Aishi, and I'm delighted to support UHS Hacks this year. I like to code and build websites, play volleyball, and hang out with family and friends."
               image="/people/aishi.png"
               title="Volunteer"
             />
             <Person
               name="Surina Chandra"
-              bio="Hi, I’m Surina, and I’m excited to help out with UHS Hacks this year. I love 3D modeling, spending time with friends, and anything in the science department! You can reach me at: "
+              bio="Hi, I’m Surina! I’m excited to help with UHS Hacks this year. I love 3D modeling, spending time with friends, and anything in the science department! "
               image="/people/surina.png"
               title="Volunteer"
             />
             <Person
               name="Vihaan Paka-Hedge"
-              bio="Hi, I’m Surina, and I’m excited to help out with UHS Hacks this year. I love 3D modeling, spending time with friends, and anything in the science department excites me! You can reach me at: "
+              bio="Hi, I’m Surina! I’m excited to help with UHS Hacks this year. I love 3D modeling, spending time with friends, and anything in the science department!  "
               image="/people/vihaan.png"
               title="Volunteer"
             />
             <Person
               name="Phoebe Schofield"
-              bio="“Hi, I’m Phoebe! In my free time I enjoy dancing and logic puzzles of any kind. I’m thrilled to help out with the UHS Hackathon this year! You can reach me at: phoebe.ahn.schofield@gmail.com”"
+              bio="Hi, I’m Phoebe! In my free time I enjoy dancing and logic puzzles of any kind. I’m thrilled to help out with the UHS Hackathon this year!"
               image="/people/phoebe.png"
               title="Volunteer"
             />
@@ -353,7 +353,7 @@ const HomeClient = () => {
             <p className=" text-base ">
               &copy; {year} UHS Hacks. All rights reserved.
             </p>
-            <p>Website built by <Link href="https://github.com/jacob-s-codes" target="_blank" className="hover:cursor-pointer hover:text-black">Jacob S</Link></p>
+            <p>Website built by <Link href="https://github.com/ella-m-shaul" target="_blank" className="hover:cursor-pointer hover:text-black">Ella Shaul</Link></p>
             <p className=' text-center'>Questions? Email: <a href="mailto:info@uhshacks.com" className='font-bold hover:underline'>info@uhshacks.com</a></p>
           </div>
         </div>
