@@ -266,16 +266,35 @@ const HomeClient = () => {
             <Person
               name="Ella Shaul"
               bio="Hi, I'm Ella and excited to lead with UHS Hacks 2027! I like to hang out with friends, listen to music, and anything STEM related. You can reach me at: elmshaul@gmail.com"
-              image="/people/ellapic.jpg"
+              image="/people/ellapic.png"
               title="Lead Organizer"
             />
 
             <Person
-              name="Naveen Gunawardana"
-              bio="Hi, I'm Naveen and am excited to help out with UHS Hacks. I'm currently a software developer at Branded NIL and founder of locatemeals.com. I like to make AI related projects and play basketball."
-              image="/people/naveenpic.jpg"
+              name="Aishwarya Jha"
+              bio="Hi, I'm Aishi, and I'm excited to support UHS Hacks this year. I like to code and build websites, play volleyball, and hang out with family and friends. You can reach me at: aishwaryapjha@gmail.com"
+              image="/people/aishi.png"
               title="Volunteer"
             />
+            <Person
+              name="Surina Chandra"
+              bio="Hi, I’m Surina, and I’m excited to help out with UHS Hacks this year. I love 3D modeling, spending time with friends, and anything in the science department excites me! You can reach me at: "
+              image="/people/surina.png"
+              title="Volunteer"
+            />
+            <Person
+              name="Vihaan Paka-Hedge"
+              bio="Hi, I’m Surina, and I’m excited to help out with UHS Hacks this year. I love 3D modeling, spending time with friends, and anything in the science department excites me! You can reach me at: "
+              image="/people/vihaan.png"
+              title="Volunteer"
+            />
+            <Person
+              name="Phoebe Schofield"
+              bio="“Hi, I’m Phoebe! In my free time I enjoy dancing and logic puzzles of any kind. I’m thrilled to help out with the UHS Hackathon this year! You can reach me at: phoebe.ahn.schofield@gmail.com”"
+              image="/people/phoebe.png"
+              title="Volunteer"
+            />
+
           </div>
         </div>
       </div>
