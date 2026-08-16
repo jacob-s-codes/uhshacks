@@ -36,11 +36,15 @@ const HomeClient = () => {
               className="text-red-700"
 
             >
-              UHS{" "}
+              {"UHS"}
             </span>
-            <CryptoText text="HACKS 2027" />
+              <CryptoText text=" HACKS" />
           </h1>
-          <h2 className="max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white my-8">
+          <h2  
+            className="pt-3.5 font-black tracking-tight text-white text-7xl lg:text-8xl text-center ">
+               <CryptoText text="2027" />
+            </h2> 
+          <h3 className="max-w-2xl text-center font-semibold lg:text-3xl text-2xl text-white my-8">
             MANY VOICES, ONE UNIVERSITY
 
             <span
@@ -49,7 +53,7 @@ const HomeClient = () => {
             >
               {"{HACKATHON} "}
             </span>
-          </h2>
+          </h3>
         </div>
       </div>
 
