@@ -31,19 +31,27 @@ const HomeClient = () => {
 
         {/* Content */}
         <div className="relative h-full flex flex-col items-center justify-center px-4 z-10">
-          <h1 className="font-black tracking-tight text-white text-7xl lg:text-9xl text-center ">
-            <span
-              className="text-red-800"
-
-            >
+          <h1 className="font-black tracking-tight text-white text-7xl lg:text-9xl text-center">
+            <span className="text-red-800">
               {"UHS"}
             </span>
-              <CryptoText text=" HACKS" />
+
+            <span className="ml-7 relative group inline-block">
+              <span className="font-extralight absolute right-full -top-2.5 -mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                {"{"}
+              </span>
+
+              <CryptoText text="HACKS" />
+
+              <span className="font-extralight absolute left-full -top-2.5 -ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                {"}"}
+              </span>
+            </span>
           </h1>
-          <h2  
+          <h2
             className="pt-3.5 font-black tracking-tight text-white text-7xl lg:text-8xl text-center ">
-               <CryptoText text="2027" />
-            </h2> 
+            <CryptoText text="2027" />
+          </h2>
           <h3 className="max-w-3xl text-center font-semibold lg:text-3xl text-2xl text-white my-8">
             MANY VOICES, ONE UHS
 
@@ -74,25 +82,25 @@ const HomeClient = () => {
 
 
 
-      {/* CTA Section */}
-      <div className="bg-red-800">
-        <div className="max-w-[1450px] flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-12 sm:py-20 px-5 sm:px-6">
+        {/* CTA Section */}
+        <div className="bg-red-800">
+          <div className="max-w-[1450px] flex lg:flex-row flex-col lg:text-left text-center items-center justify-between mx-auto py-12 sm:py-20 px-5 sm:px-6">
 
-          <div className='text-white lg:pr-8 w-full'>
-            <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase lg:pr-4">
-              <span className="block">Ready to hack?</span>
-              <span className="block">Check back in soon!</span>
-            </h2>
-            <p className="my-8 text-xl leading-6 ">
-              Limited spots available. Register soon to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold hover:underline'>info@uhshacks.com</a> for more information.
-            </p>
-            <Registerbtn />
+            <div className='text-white lg:pr-8 w-full'>
+              <h2 className="lg:text-5xl text-4xl font-black text-white sm:text-5xl uppercase lg:pr-4">
+                <span className="block">Ready to hack?</span>
+                <span className="block">Check back in soon!</span>
+              </h2>
+              <p className="my-8 text-xl leading-6 ">
+                Limited spots available. Register soon to secure your place. Questions? Email <a href="mailto:info@uhshacks.com" className='font-bold hover:underline'>info@uhshacks.com</a> for more information.
+              </p>
+              <Registerbtn />
+            </div>
+            <img src="/swag.jpg" alt="" className='max-w-xl rotate-[-90deg] rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4 lg:mr-8' />
           </div>
-          <img src="/swag.jpg" alt="" className='max-w-xl rotate-[-90deg] rounded-2xl shadow-2xl shadow-black h-auto lg:mt-0 mt-4 lg:mr-8' />
         </div>
-      </div>
 
-      {/* <div className="pt-36 sm:px-6 lg:px-8 px-4" id="theteam">
+        {/* <div className="pt-36 sm:px-6 lg:px-8 px-4" id="theteam">
         <div className="max-w-7xl mx-auto">
           <h2 className='text-center lg:text-5xl text-4xl font-black'>OUR TEAM</h2>
           <hr className='mb-8 mt-1 border-2 border-black' />
