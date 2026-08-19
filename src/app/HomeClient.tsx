@@ -312,7 +312,7 @@ const HomeClient = () => {
             />
             <Person
               name="Vihaan Paka-Hedge"
-              bio="Hi, I’m Surina! I’m excited to help with UHS Hacks this year. I love 3D modeling, spending time with friends, and anything in the science department!  "
+              bio="Hi, I’m Vihaan! I’m a volunteer for UHS Hacks. I am passionate about computer science and math. In my free time I enjoy swimming and reading.   "
               image="/people/vihaan.png"
               title="Volunteer"
             />
