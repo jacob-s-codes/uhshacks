@@ -31,12 +31,12 @@ const HomeClient = () => {
 
         {/* Content */}
         <div className="relative h-full flex flex-col items-center justify-center px-4 z-10">
-          <h1 className="font-black tracking-tight text-white text-7xl lg:text-9xl text-center">
+          <h1 className="font-black tracking-tight text-white text-5xl sm:text-6xl md:text-7xl lg:text-9xl text-center">
             <span className="text-red-800">
               {"UHS"}
             </span>
 
-            <span className="ml-8 relative group inline-block">
+            <span className="ml-2 sm:ml-4 md:ml-6 lg:ml-8 relative group inline-block">
               <span className="absolute right-full -top-2.5 -mr-2 font-extralight opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                 {"{"}
               </span>
@@ -52,11 +52,10 @@ const HomeClient = () => {
             </span>
 
           </h1>
-          <h2
-            className="pt-3.5 font-black tracking-tight text-white text-7xl lg:text-8xl text-center ">
+          <h2 className="pt-3.5 font-black tracking-tight text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-center">
             <CryptoText text="2027" />
           </h2>
-          <h3 className="max-w-3xl text-center font-semibold lg:text-3xl text-2xl text-white my-8">
+          <h3 className="max-w-3xl text-center font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl text-white my-6 sm:my-8 px-4">
             MANY VOICES, ONE UHS
 
             <span
@@ -135,8 +134,7 @@ const HomeClient = () => {
           <h2 className='lg:text-5xl text-4xl font-black uppercase text-center pb-2 '>Schedule</h2>
           <hr className='border-2 border-black' />
           <div className='flex flex-col items-center w-full text-2xl font-thin pt-12 gap-y-4 md:px-0 px-2'>
-            <div className='flex flex-row justify-between gap-x-10 w-full max-w-7xl border border-gray-700 px-10 py-10
-              rounded-lg bg-white '>
+            <div className='flex flex-row justify-between items-center gap-x-4 sm:gap-x-8 w-full max-w-7xl border border-gray-700 px-4 sm:px-6 md:px-10 py-6 sm:py-8 md:py-10 rounded-lg bg-white'>
               <h3 className='font-medium'>9:00 AM</h3>
               <div className='flex flex-col items-end text-right w-full max-w-2xl'>
                 <h3 className='font-medium pb-1'>Check-In</h3>
