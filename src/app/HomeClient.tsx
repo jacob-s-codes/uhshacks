@@ -309,7 +309,7 @@ const HomeClient = () => {
               title="Volunteer"
             />
             <Person
-              name="Vihaan Paka-Hedge"
+              name="Vihaan Paka-Hegde"
               bio="Hi, I’m Vihaan! I’m a volunteer for UHS Hacks. I am passionate about computer science and math. In my free time I enjoy swimming and reading.   "
               image="/people/vihaan.png"
               title="Volunteer"
